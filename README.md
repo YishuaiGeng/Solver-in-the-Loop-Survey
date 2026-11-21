@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/branding/solver-in-the-loop.svg" alt="Solver-in-the-Loop logo" width="160">
+  <img src="assets/branding/solver-in-the-loop.svg" alt="Solver-in-the-Loop logo" width="320">
 </p>
 
 <h1 align="center">A Survey of Symbolic Solver Integration in Large Language Model Reasoning</h1>
@@ -10,7 +10,7 @@
 
 <div align="center">
 
-**1,459 studies · January 2020–October 2026**
+**1,459 studies**
 
 [Manuscript](manuscript/README.md) · [Classified papers](papers/README.md) · [Full catalogue](papers/catalogue.md) · [Citation](#citation)
 
