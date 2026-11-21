@@ -23,6 +23,7 @@
     "analysis/task-by-scoped-metric.csv": "72cf8009f19c218dd08e140734a5a18053a53aab4353e02f662c6441679d64df",
     "analysis/task-relevance-counts.csv": "d48bf67e0fdee42aa08390c75a1ec23314e2d11388158307de4cc3a3ac69bfc0",
     "assets/README.md": "8b0469f413cf16a93085ca05c39a7c9e75c693d411f744063989963b5185e643",
+    "assets/branding/solver-in-the-loop-mascot.svg": "2d79578b38e2404289a5ad84188efb9498727e9ad57844ef7b0b10869daa4883",
     "assets/branding/solver-in-the-loop.svg": "7d578a89b5bacaf09924df77a8d58c1c59ee5e7705752a8a7c4184e06815a91f",
     "assets/figures/assurance-scope.png": "bc1939988de6ca9ef77108d6e10ddc5db05707faf89f61de113616fa71fa5b71",
     "assets/figures/diagnosis-repair.png": "096f9478c48af6e1c8174d3bace229eac2359a9ffbfd6bacaf4dcf06ac084c35",
@@ -73,12 +74,12 @@
     "references/references.bib": "3e96aa72855c5504388cb34fa0b6510c1146f8ce12cd357acf12827aa2698009",
     "references/references.json": "932e03051428d2979d117152ba948aff5ca25356311e11522077d30f4b1bb550",
     "scripts/README.template": "938df381e575388d71802530a304d8dae68da807285edd3f0574d3d9fb315657",
-    "scripts/build_site.py": "770bd2e1b5c4a9edf9f246248c6f5116920258d2cb8ec46515a9b62b29227661",
+    "scripts/build_site.py": "0522a921bcd3e36a3c1bda4011859a3dfba21157d24bad0ed90a178f9dafc6fb",
     "scripts/render.py": "c6e89944a3810fee2d5ffe90a7889256aaa64373b48da3d1fb650edf1cc12418",
-    "scripts/validate.py": "58630fe61f012336e0b3c744abb1bb84623c0d7b4c579a1df390a5fb26af30f3",
+    "scripts/validate.py": "76fd925fba79b6f9bd02f458d161021e9e0513ca148c5dc093a8edc760056b06",
     "site/catalogue.js": "81c435fd017dea1847058e76019e3aa1deab270f8bed9a4c69b6e4d2bcde3c19",
     "site/figures.js": "715194c96ce56e8a38d2d666fc1476bcf7c94ef65fd3c8a7e50ec23931276651",
-    "site/index.html": "8c1046c08e84da94eb7b249980b94ff9ba3f20b95e9597dbda46a9053b936e59",
+    "site/index.html": "10be298f76dd82ba7ffdbd4e842b55f67f40209f968c72e8b0d5d75232c2390c",
     "site/style.css": "aaa68189b0bc9a91991b5cbf13bb007e3cb80b482b0f8a18ec7a999d422ad3d8",
     "tests/test_validation.py": "e526aa73658e9ed5b9bb842886cec11b78e69393a870b13f79fada7ac9df6eaf"
   }

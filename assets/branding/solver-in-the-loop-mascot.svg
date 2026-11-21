@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="20.5 20 420 420" role="img" aria-labelledby="mascot-title" version="1.1">
+  <title id="mascot-title">Solver in the Loop mascot</title>
+  <defs>
+    <linearGradient id="letter-green" x1="0" y1="183" x2="0" y2="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#80F397" />
+      <stop offset="0.44" stop-color="#66E595" />
+      <stop offset="1" stop-color="#12BD87" />
+    </linearGradient>
+    <linearGradient id="letter-blue" x1="0" y1="188" x2="0" y2="386" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#61BDFF" />
+      <stop offset="0.48" stop-color="#3997F0" />
+      <stop offset="1" stop-color="#0068D2" />
+    </linearGradient>
+    <linearGradient id="letter-navy" x1="0" y1="190" x2="0" y2="355" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#05213A" />
+      <stop offset="1" stop-color="#00172E" />
+    </linearGradient>
+    <linearGradient id="mascot-cream" x1="170" y1="35" x2="230" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff9f1" />
+      <stop offset=".55" stop-color="#fff8ee" />
+      <stop offset="1" stop-color="#fff6eb" />
+    </linearGradient>
+    <linearGradient id="mascot-peach" x1="90" y1="95" x2="252" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffd5cc" />
+      <stop offset="1" stop-color="#ffd9ce" />
+    </linearGradient>
+    <linearGradient id="mascot-cheek" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ffc5bf" />
+      <stop offset="1" stop-color="#ffc9c0" />
+    </linearGradient>
+    <linearGradient id="mascot-eye" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#001a31" />
+      <stop offset="1" stop-color="#002743" />
+    </linearGradient>
+    <linearGradient id="mascot-gold" x1="390" y1="87" x2="406" y2="149" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffc23f" />
+      <stop offset="1" stop-color="#ffad2c" />
+    </linearGradient>
+  </defs>
+  <g id="mascot">
+    <path d="M80 345 C67 333 53 333 41 339 C28 346 25 359 30 374 C34 385 43 392 52 392 L88 358 Z" fill="url(#mascot-cream)" stroke="#00172f" stroke-width="10.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M34 360 C39 368 44 369 50 366 C57 363 66 350 77 348 L77 358 L52 385 C42 383 35 374 34 360 Z" fill="#ffdad0" />
+    <path d="M119 276 C94 276 75 265 64 245 C50 222 51 190 57 165 C66 122 91 88 121 63 C150 40 183 27 215 29 C257 28 294 48 319 77 C333 93 342 109 349 128 C362 135 369 147 372 160 C376 177 371 189 363 198 C351 201 341 211 334 224 C343 221 354 224 361 233 C374 248 368 268 357 284 C337 312 303 326 265 329 C274 341 280 352 280 367 C280 379 275 391 266 399 C277 394 286 398 286 408 C286 419 274 426 254 428 C231 431 211 429 202 423 C192 416 197 399 207 385 C192 390 177 390 164 387 C146 400 127 407 110 412 C124 414 121 423 108 428 C94 433 78 432 63 426 C51 422 47 415 49 404 C50 387 68 372 85 355 C80 350 81 337 85 326 C91 305 104 287 119 276 Z" fill="url(#mascot-cream)" stroke="#00172f" stroke-width="10.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M169 45 C133 73 111 107 101 139 C93 168 96 198 107 220 C120 247 149 262 208 264 C176 271 148 278 127 292 C110 305 107 326 92 342 C88 347 86 350 85 350 C84 339 87 326 93 315 C103 295 118 280 147 274 C113 273 91 265 77 251 C63 237 60 220 61 198 C63 152 82 111 111 80 C128 64 148 52 169 45 Z" fill="url(#mascot-peach)" />
+    <path d="M212 310 C258 321 313 315 344 290 C359 279 368 262 365 245 C371 259 362 280 350 292 C329 314 296 325 264 325 C242 325 221 320 212 310 Z" fill="#ffd2c6" />
+    <path d="M212 310 C223 325 238 336 260 338 L268 346 C243 344 224 332 212 318 C210 314 210 312 212 310 Z" fill="#ffdacd" />
+    <path d="M90 404 C115 402 137 393 160 379 C174 376 190 374 205 373 C219 372 229 377 227 385 C225 391 215 401 220 408 C227 418 261 414 279 404 C285 406 278 418 266 421 C247 428 217 425 205 419 C198 415 201 400 209 389 C192 392 176 391 163 389 C145 402 125 410 107 414 C119 419 108 425 96 424 C80 424 64 419 62 413 C68 417 86 419 95 416 C108 414 96 409 90 404 Z" fill="#ffdacd" />
+    <path d="M236 261 C260 257 292 251 315 242 C323 232 328 224 337 221 L339 227 C330 229 325 240 320 250 C295 260 263 264 236 261 Z" fill="#00172f" />
+    <path d="M214 317 C228 323 246 326 265 325 L268 332 C246 335 226 330 214 317 Z" fill="#00172f" />
+    <ellipse cx="189.5" cy="201" rx="30.7" ry="19.3" transform="rotate(-11 189.5 201)" fill="url(#mascot-cheek)" />
+    <ellipse cx="342.8" cy="154.6" rx="22.1" ry="17.4" transform="rotate(-9 342.8 154.6)" fill="url(#mascot-cheek)" />
+    <ellipse cx="180.7" cy="196.1" rx="4.9" ry="3.6" transform="rotate(-12 180.7 196.1)" fill="#fffdf8" />
+    <ellipse cx="343.5" cy="146" rx="3.7" ry="2.9" fill="#fffdf8" />
+    <ellipse cx="213" cy="164.5" rx="13.2" ry="21.1" transform="rotate(-15.5 213 164.5)" fill="url(#mascot-eye)" />
+    <ellipse cx="307" cy="130.5" rx="12.7" ry="20.9" transform="rotate(-15.5 307 130.5)" fill="url(#mascot-eye)" />
+    <path d="M190.5 127.7 C193.3 124.2 199.1 119.5 202.4 118.3 C204.3 117.6 205.9 118 205.6 119.8 C205.2 121.4 198.9 125.5 194.4 128.1 C191.3 129.8 188.6 130.1 190.5 127.7 Z" fill="#00172f" />
+    <path d="M282 92.3 C284.6 89.6 288.7 86.8 291.8 86.1 C294.2 85.6 295.1 86.5 293.8 88.5 C291.7 90.7 287.5 93.2 284.2 94.5 C282.1 95.3 280.3 94.3 282 92.3 Z" fill="#00172f" />
+    <path d="M254.5 182 C257 188.3 263.4 189.3 268.1 184.8 C271 182 272.6 177 273 172 C277 178.5 282.7 180.9 288.4 178.7 C292.8 177 295.6 174.2 294 170.6" fill="none" stroke="#00172f" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M378 132 C372.5 130.6 370.1 126.7 372 121 L381 96 C383.1 89.6 388.1 87.3 393.1 89.2 C399.1 91 401.3 96.2 397.6 103.1 L384.7 127.8 C383.2 130.6 380.7 132.7 378 132 Z" fill="url(#mascot-gold)" />
+    <path d="M392 147.2 C388.9 142.8 390.7 138.4 395.4 135.3 L417.6 120 C423.1 116.2 429.3 118.5 432.1 123.3 C435.1 128.7 432.9 133.9 427.2 136.9 L402.9 148.7 C398.3 151 394.4 150.8 392 147.2 Z" fill="url(#mascot-gold)" />
+  </g>
+</svg>

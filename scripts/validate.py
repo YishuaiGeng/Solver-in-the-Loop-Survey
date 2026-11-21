@@ -107,7 +107,7 @@ def validate_files():
         require(not p.is_symlink(), f'Symlink is outside release policy: {rel}')
         if not p.is_file():
             continue
-        require(rel.as_posix() in site_files or (len(rel.parts)==1 and p.name in allowed_root) or (len(rel.parts)>1 and rel.parts[0] in allowed_dirs and (p.suffix in allowed_ext or rel.as_posix() == 'assets/branding/solver-in-the-loop.svg')), f'Unapproved file: {rel}')
+        require(rel.as_posix() in site_files or (len(rel.parts)==1 and p.name in allowed_root) or (len(rel.parts)>1 and rel.parts[0] in allowed_dirs and (p.suffix in allowed_ext or rel.as_posix() in {'assets/branding/solver-in-the-loop.svg', 'assets/branding/solver-in-the-loop-mascot.svg'})), f'Unapproved file: {rel}')
         require(p.stat().st_size < 5_000_000, f'Unexpected large file: {rel}')
         paths.append(p)
         if p.suffix == '.png':

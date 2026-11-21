@@ -13,6 +13,7 @@ from render import ROLES, ROOT, load
 REPOSITORY = "https://github.com/YishuaiGeng/Solver-in-the-Loop-Survey"
 PUBLIC_DOWNLOADS = (
     "assets/branding/solver-in-the-loop.svg",
+    "assets/branding/solver-in-the-loop-mascot.svg",
     "assets/figures/overview.png",
     "assets/figures/solver-evolution.png",
     "data/papers.csv",
