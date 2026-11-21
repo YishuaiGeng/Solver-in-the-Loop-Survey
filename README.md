@@ -10,7 +10,7 @@
 
 <div align="center">
 
-**1,459 studies**
+**1,459 studies · January 2020–October 2026**
 
 [Manuscript](manuscript/README.md) · [Classified papers](papers/README.md) · [Full catalogue](papers/catalogue.md) · [Citation](#citation)
 
