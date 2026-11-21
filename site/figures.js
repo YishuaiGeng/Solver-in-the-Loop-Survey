@@ -10,7 +10,7 @@ function current() {
 
 function update() {
   const index = current();
-  counter.textContent = `${index + 1} / ${slides.length}`;
+  counter.textContent = `Figure ${index + 1} of ${slides.length} · swipe or use the arrow keys`;
   previousFigure.disabled = index === 0;
   nextFigure.disabled = index === slides.length - 1;
 }

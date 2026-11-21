@@ -55,18 +55,18 @@ section { scroll-margin-top: 1rem; }
 .nav-links a:hover { color: var(--blue-dark); text-decoration: underline; }
 
 .hero {
-  padding-block: clamp(2.8rem, 7vw, 5.5rem) clamp(3rem, 7vw, 4.6rem);
+  padding-block: clamp(1.8rem, 4vw, 3rem) clamp(2rem, 4vw, 2.8rem);
   text-align: center;
   background: radial-gradient(ellipse at center 8%, #f2f8fd, white 67%);
 }
-.hero-logo { width: min(20rem, 80%); height: auto; margin-bottom: 1.1rem; }
+.hero-logo { width: min(16rem, 70%); height: auto; margin-bottom: 0.8rem; }
 .hero h1 {
   max-width: 24em;
   margin-inline: auto;
   font-size: clamp(1.7rem, 3.6vw, 2.55rem);
   letter-spacing: -0.03em;
 }
-.authors { margin-top: 1.6rem; font-size: clamp(1rem, 2vw, 1.14rem); color: var(--blue-dark); }
+.authors { margin-top: 1.1rem; font-size: clamp(1rem, 2vw, 1.14rem); color: var(--blue-dark); }
 .affiliation { margin-top: 0.18rem; color: var(--muted); font-size: 0.92rem; }
 .affiliation.corresponding { font-size: 0.82rem; }
 .hero sup { font-size: 0.68em; }
@@ -98,7 +98,10 @@ section { scroll-margin-top: 1rem; }
 .section h2 { margin-bottom: 1.3rem; }
 .abstract, .catalogue { background: var(--wash); border-block: 1px solid var(--border); }
 .abstract h2 { text-align: center; }
-.abstract p { color: #2e4356; font-size: 1.03rem; line-height: 1.85; }
+.abstract { padding-block: clamp(2rem, 4vw, 3rem); }
+.abstract .prose { width: min(100% - 3rem, 56rem); }
+.abstract h2 { margin-bottom: 0.9rem; font-size: clamp(1.7rem, 3.5vw, 2.2rem); }
+.abstract p { color: #2e4356; font-size: 0.94rem; line-height: 1.7; text-align: justify; hyphens: auto; }
 figure a { display: block; }
 figure img {
   display: block;
@@ -112,23 +115,24 @@ figure img {
 figure a:hover img { border-color: #98b2ca; }
 figcaption { margin-top: 0.6rem; color: var(--muted); font-size: 0.9rem; }
 .button.pending { opacity: 0.6; cursor: default; }
-.carousel { position: relative; }
+.carousel { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.8rem; }
 .carousel-track {
   display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth;
   border: 1px solid var(--border); border-radius: 0.55rem; background: white; scrollbar-width: none;
 }
 .carousel-track::-webkit-scrollbar { display: none; }
-.slide { flex: 0 0 100%; scroll-snap-align: start; padding: clamp(0.5rem, 2vw, 1.2rem); }
-.slide a { display: flex; justify-content: center; align-items: center; height: min(70vh, 40rem); }
+.slide { flex: 0 0 100%; scroll-snap-align: start; padding: 1rem clamp(0.8rem, 2.5vw, 1.6rem) 1.1rem; }
+.slide a { display: flex; justify-content: center; align-items: center; height: min(52vh, 26rem); }
 .slide img { max-width: 100%; max-height: 100%; width: auto; height: auto; padding: 0; border: 0; object-fit: contain; }
-.slide figcaption { text-align: center; }
-.carousel-controls { display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 0.8rem; font-size: 0.9rem; color: var(--muted); }
-.carousel-controls button {
-  width: 2.4rem; height: 2.4rem; border: 1px solid var(--border); border-radius: 999px;
-  background: white; color: var(--blue-dark); font-size: 1.1rem; cursor: pointer;
+.slide figcaption { max-width: 46rem; margin: 0.9rem auto 0; font-size: 0.84rem; line-height: 1.6; text-align: left; }
+.carousel-arrow {
+  width: 2.6rem; height: 2.6rem; border: 1px solid var(--border); border-radius: 999px;
+  background: white; color: var(--blue-dark); font-size: 1.6rem; line-height: 1; cursor: pointer;
+  box-shadow: 0 1px 3px rgba(20, 38, 56, 0.08);
 }
-.carousel-controls button:not(:disabled):hover { background: var(--wash); }
-.carousel-controls button:disabled { opacity: 0.4; cursor: default; }
+.carousel-arrow:not(:disabled):hover { background: var(--wash); border-color: #98b2ca; }
+.carousel-arrow:disabled { opacity: 0.35; cursor: default; }
+.carousel-counter { margin-top: 0.6rem; text-align: center; color: var(--muted); font-size: 0.85rem; }
 .roles-title { margin-top: 3rem; }
 .role-cards { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.65rem; margin-top: 1.4rem; }
 .role-card {
@@ -241,6 +245,9 @@ pre {
 .role-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 37rem) {
+  .carousel { grid-template-columns: minmax(0, 1fr); }
+  .carousel-arrow { display: none; }
+  .abstract p { text-align: left; }
   .container, .prose { width: calc(100% - 2rem); }
   .filters, .research-links, .button.pending { opacity: 0.6; cursor: default; }
 .carousel { position: relative; }

@@ -52,15 +52,13 @@
     <section id="figures" class="section container" aria-labelledby="figures-title">
       <h2 id="figures-title">Figures</h2>
       <div class="carousel" aria-roledescription="carousel" aria-label="Manuscript figures">
+        <button type="button" class="carousel-arrow" id="figure-previous" aria-label="Previous figure">&#8249;</button>
         <div class="carousel-track" id="figure-track" tabindex="0">
           $figure_slides
         </div>
-        <div class="carousel-controls">
-          <button type="button" id="figure-previous" aria-label="Previous figure">&larr;</button>
-          <span id="figure-counter" aria-live="polite"></span>
-          <button type="button" id="figure-next" aria-label="Next figure">&rarr;</button>
-        </div>
+        <button type="button" class="carousel-arrow" id="figure-next" aria-label="Next figure">&#8250;</button>
       </div>
+      <p class="carousel-counter" id="figure-counter" aria-live="polite"></p>
       <p class="resource-links"><a href="$repository/blob/main/assets/README.md">All manuscript figures on GitHub</a><a href="$repository/blob/main/docs/taxonomy.md">Taxonomy and reliability boundaries</a></p>
 
       <h3 class="roles-title">Five solver roles</h3>

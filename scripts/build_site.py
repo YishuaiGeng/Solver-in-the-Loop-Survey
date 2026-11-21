@@ -48,11 +48,12 @@ def make_index():
 
     citation = (ROOT / "README.md").read_text(encoding="utf-8").split("```bibtex\n", 1)[1]
     bibtex = citation.split("\n```", 1)[0]
+    captions = load("site/captions.json")
     slides = "\n          ".join(
         f'<figure class="slide" aria-roledescription="slide" aria-label="Figure {number}">'
         f'<a href="{path}"><img src="{path}" alt="Figure {number}: {escape(name)}" '
         f'loading="{"eager" if index == 0 else "lazy"}"></a>'
-        f'<figcaption><strong>Figure {number}.</strong> {escape(name)}</figcaption></figure>'
+        f'<figcaption><strong>Figure {number}.</strong> {escape(captions[number])}</figcaption></figure>'
         for index, (number, name, path) in enumerate(figures())
     )
     template = Template((ROOT / "site/index.html").read_text(encoding="utf-8"))
