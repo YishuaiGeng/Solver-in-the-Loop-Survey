@@ -12,7 +12,7 @@
 
 **1,459 studies · January 2020–October 2026**
 
-[Manuscript](manuscript/README.md) · [Classified papers](papers/README.md) · [Full catalogue](papers/catalogue.md) · [Citation](#citation)
+[Project homepage](https://yishuaigeng.github.io/Solver-in-the-Loop-Survey/) · [Manuscript](manuscript/README.md) · [Classified papers](papers/README.md) · [Full catalogue](papers/catalogue.md) · [Citation](#citation)
 
 </div>
 

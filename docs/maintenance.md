@@ -28,3 +28,14 @@ The CSV and readable lists reproduce the released metadata. Automated checks ver
 Store verified paper destinations in [`manuscript/links.json`](../manuscript/links.json), using `not_reported` until an actual URL exists. Regeneration updates the homepage and manuscript page together. Add the formal paper citation when it becomes public.
 
 A tagged snapshot is useful alongside an arXiv posting, formal publication, or a specifically cited dataset. It is optional for ordinary maintenance. Keep existing tags and releases unchanged. `data/snapshot.json` and the version in `CITATION.cff` identify the retained data snapshot; routine presentation edits are identified by their commits. When a new data snapshot is needed, update its counts, dates, citation metadata and change notes consistently.
+
+## Project homepage
+
+GitHub Pages publishes the static site on pushes to `main`. Edit the page in `site/`. The build reads the public catalogue, figures, snapshot, and manuscript links directly. Preview it locally from the repository root.
+
+```sh
+python3 -B scripts/build_site.py /tmp/solver-survey-site
+python3 -m http.server 8000 --directory /tmp/solver-survey-site
+```
+
+Use an empty output directory for each build. [Project homepage](https://yishuaigeng.github.io/Solver-in-the-Loop-Survey/)

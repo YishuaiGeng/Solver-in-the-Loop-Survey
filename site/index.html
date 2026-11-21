@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A systematic survey of symbolic solver integration in large language model reasoning, with an interactive study catalogue and manuscript figures.">
+  <title>Solver-in-the-Loop · A Survey of Symbolic Solver Integration</title>
+  <link rel="icon" type="image/svg+xml" href="assets/branding/solver-in-the-loop.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="catalogue.js" defer></script>
+  <script src="figures.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container navigation" aria-label="Main navigation">
+      <a class="wordmark" href="./">Solver-in-the-Loop</a>
+      <div class="nav-links">
+        <a href="#abstract">Abstract</a>
+        <a href="#figures">Figures</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#citation">Citation</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <div class="container">
+        <img class="hero-logo" src="assets/branding/solver-in-the-loop.svg" alt="" width="1795" height="461">
+        <h1 id="title">A Survey of Symbolic Solver Integration in Large Language Model Reasoning</h1>
+        <p class="authors">Yishuai Geng<sup>1,2</sup>, Guohui Xiao<sup>1,2,*</sup>, Guilin Qi<sup>1,2</sup>, Tianxing Wu<sup>1,2</sup>, Peifeng Zhang<sup>1,2</sup></p>
+        <p class="affiliation"><sup>1</sup>School of Computer Science and Engineering, Southeast University, China</p>
+        <p class="affiliation"><sup>2</sup>Key Laboratory of New Generation Artificial Intelligence Technology and Its Interdisciplinary Applications, Ministry of Education, China</p>
+        <p class="affiliation corresponding"><sup>*</sup>Corresponding author</p>
+        <p class="coverage"><strong>$study_count studies</strong> <span aria-hidden="true">·</span> $coverage</p>
+        <div class="actions">
+          <a class="button primary" href="#catalogue"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>Browse the studies</a>
+          $paper_links
+          <a class="button" href="$repository"><svg aria-hidden="true" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="abstract" class="section abstract">
+      <div class="container prose">
+        <h2>Abstract</h2>
+        <p>Large language models (LLMs) increasingly interact with symbolic solvers, but the empirical benefits of this integration remain difficult to compare across tasks and evaluation protocols. This survey systematically reviews 1,459 studies identified through database searches and first reported between January 2020 and October 2026. We organize solver integration into five non-exclusive functional roles, distinguished by how the system uses the solver&rsquo;s output: symbolic solving, verification, diagnosis and repair, search control, and learning supervision. We distinguish these roles from the interaction mechanisms that realize them, characterized by topology, invocation control, intervention granularity, and information exchange. Synthesizing selected within-study comparisons across logical reasoning, optimization, planning, theorem proving, and program verification, we find task-specific gains from symbolic computation, diagnostic feedback, and solver-derived supervision, whose direction and size depend on the base model, the search budget, and the task; additional feedback or training does not improve every evaluated configuration. We distinguish successful proof construction for fixed formal targets from the acceptance of generated representations, whose fidelity to the original task requires separate assessment, and we separate improvements under retained inference-time checking from transfer without the checker. The synthesis identifies research priorities in semantic validation, adaptive intervention, and the evaluation of computational cost and generalization.</p>
+      </div>
+    </section>
+
+    <section id="figures" class="section container" aria-labelledby="figures-title">
+      <h2 id="figures-title">Figures</h2>
+      <div class="carousel" aria-roledescription="carousel" aria-label="Manuscript figures">
+        <div class="carousel-track" id="figure-track" tabindex="0">
+          $figure_slides
+        </div>
+        <div class="carousel-controls">
+          <button type="button" id="figure-previous" aria-label="Previous figure">&larr;</button>
+          <span id="figure-counter" aria-live="polite"></span>
+          <button type="button" id="figure-next" aria-label="Next figure">&rarr;</button>
+        </div>
+      </div>
+      <p class="resource-links"><a href="$repository/blob/main/assets/README.md">All manuscript figures on GitHub</a><a href="$repository/blob/main/docs/taxonomy.md">Taxonomy and reliability boundaries</a></p>
+
+      <h3 class="roles-title">Five solver roles</h3>
+      <div class="role-cards" aria-label="Literature by solver role">
+        $role_links
+      </div>
+      <p class="role-note">Roles overlap, so a study can appear under more than one role.</p>
+    </section>
+
+    <section id="catalogue" class="section catalogue">
+      <div class="container">
+        <h2>Study catalogue</h2>
+        <div id="catalogue-search" hidden>
+          <div class="filters">
+            <label>Find a study
+              <input id="study-query" type="search" placeholder="Search by title or author" autocomplete="off">
+            </label>
+            <label>Solver role
+              <select id="study-role">
+                <option value="">All roles</option>
+                $role_options
+              </select>
+            </label>
+          </div>
+          <p id="study-status" class="study-status" role="status"></p>
+          <ol id="study-results" class="study-results"></ol>
+          <div class="pagination">
+            <button id="study-previous" type="button">Previous</button>
+            <span id="study-page"></span>
+            <button id="study-next" type="button">Next</button>
+          </div>
+        </div>
+        <p class="resource-links"><a href="$repository/blob/main/papers/catalogue.md">Full catalogue on GitHub</a><a href="data/papers.csv" download>Download CSV</a><a href="$repository/blob/main/data/schema.md">Data dictionary</a></p>
+        <div class="research-links">
+          <a href="$repository/blob/main/docs/methodology.md"><strong>Review methods</strong><span>Eligibility and review scope</span></a>
+          <a href="$repository/blob/main/analysis/benchmarks.md"><strong>Benchmarks</strong><span>$resource_count evaluation resources</span></a>
+          <a href="$repository/blob/main/references/README.md"><strong>References</strong><span>$reference_count manuscript citations</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation" class="section container prose">
+      <h2>Citation</h2>
+      <p>Cite the companion repository when using its catalogue, data, or figures.</p>
+      <pre><code>$bibtex</code></pre>
+      <p><a href="$repository/blob/main/CITATION.cff">Citation metadata</a> · <a href="references/references.bib" download>Download manuscript bibliography</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><a href="$repository">Solver-in-the-Loop on GitHub</a><a href="$repository/blob/main/LICENSE">Rights and attribution</a></div>
+  </footer>
+</body>
+</html>

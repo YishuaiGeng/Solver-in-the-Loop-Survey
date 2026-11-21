@@ -94,6 +94,7 @@ def validate_files():
     allowed_dirs = {'data','docs','papers','references','analysis','assets','manuscript','scripts','tests','.github'}
     allowed_root = {'README.md','LICENSE','CITATION.cff','CONTRIBUTING.md','AGENTS.md','CHANGELOG.md','.gitignore','release-manifest.json'}
     allowed_ext = {'.md','.csv','.json','.bib','.png','.py','.yml','.yaml','.cff','.template'}
+    site_files = {'site/index.html', 'site/style.css', 'site/catalogue.js', 'site/figures.js'}
     # Split literals so the validator does not mistake its own patterns for leaks.
     forbidden = ['/'+'Users/', '/'+'home/', 'file'+ '://', 'Solver'+'-in-the-Loop-Survey-Workspace',
                  'Solvers'+'-in-the-loop-Survey-Workspace',
@@ -106,7 +107,7 @@ def validate_files():
         require(not p.is_symlink(), f'Symlink is outside release policy: {rel}')
         if not p.is_file():
             continue
-        require((len(rel.parts)==1 and p.name in allowed_root) or (len(rel.parts)>1 and rel.parts[0] in allowed_dirs and (p.suffix in allowed_ext or rel.as_posix() == 'assets/branding/solver-in-the-loop.svg')), f'Unapproved file: {rel}')
+        require(rel.as_posix() in site_files or (len(rel.parts)==1 and p.name in allowed_root) or (len(rel.parts)>1 and rel.parts[0] in allowed_dirs and (p.suffix in allowed_ext or rel.as_posix() == 'assets/branding/solver-in-the-loop.svg')), f'Unapproved file: {rel}')
         require(p.stat().st_size < 5_000_000, f'Unexpected large file: {rel}')
         paths.append(p)
         if p.suffix == '.png':
