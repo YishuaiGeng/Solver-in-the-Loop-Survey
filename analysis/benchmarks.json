@@ -1,873 +1,907 @@
 [
   {
-    "part": "Task solutions and formal models",
-    "name": "PrOntoQA",
-    "category": "Deductive reasoning",
-    "source": "Pyke",
-    "modality": "Answer",
-    "citations": [
-      "saparov2023language"
-    ],
-    "protocols": [
+    "task": "Logical reasoning and QA",
+    "resource_count": 182,
+    "examples": [
       {
-        "text": "Pyke",
+        "name": "PrOntoQA",
         "citations": [
-          "pan2023logiclm"
-        ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "ProofWriter",
-    "category": "Deductive reasoning",
-    "source": "Pyke; Prover9",
-    "modality": "Task labels; answer accuracy",
-    "citations": [
-      "tafjord2021proofwriter"
-    ],
-    "protocols": [
-      {
-        "text": "Pyke",
-        "citations": [
-          "pan2023logiclm"
+          "saparov2023language"
         ]
       },
       {
-        "text": "Prover9",
+        "name": "ProofWriter",
         "citations": [
-          "olausson2023linc"
+          "tafjord2021proofwriter"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "FOLIO",
-    "category": "First-order reasoning",
-    "source": "Prover9",
-    "modality": "Answer",
-    "citations": [
-      "han2024folio"
-    ],
-    "protocols": [
+      },
       {
-        "text": "Prover9",
+        "name": "FOLIO",
         "citations": [
-          "pan2023logiclm",
-          "olausson2023linc"
+          "han2024folio"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "AR-LSAT",
-    "category": "Analytical reasoning",
-    "source": "Z3",
-    "modality": "Answer",
-    "citations": [
-      "zhong2022analytical"
-    ],
-    "protocols": [
+      },
       {
-        "text": "Z3",
+        "name": "AR-LSAT",
         "citations": [
-          "pan2023logiclm"
+          "zhong2022analytical"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "LogicalDeduction",
-    "category": "Ordering constraints",
-    "source": "python-constraint",
-    "modality": "Answer",
-    "citations": [
-      "srivastava2023beyond"
-    ],
-    "protocols": [
+      },
       {
-        "text": "python-constraint",
-        "citations": [
-          "pan2023logiclm"
-        ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "GSM-SYS (GSM8K subset)",
-    "category": "Arithmetic modeling",
-    "source": "Z3 / arithmetic constraints",
-    "modality": "Answer",
-    "citations": [
-      "ye2023satlm"
-    ],
-    "protocols": [
-      {
-        "text": "Z3 / arithmetic constraints",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "ALGEBRA",
-    "category": "Arithmetic modeling",
-    "source": "Z3",
-    "modality": "Answer",
-    "citations": [
-      "heyueya2023solving"
-    ],
-    "protocols": [
-      {
-        "text": "Z3",
+        "name": "GSM-SYS",
         "citations": [
           "ye2023satlm"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "BoardgameQA",
-    "category": "Rule reasoning",
-    "source": "Z3",
-    "modality": "Answer",
-    "citations": [
-      "kazemi2023boardgameqa"
-    ],
-    "protocols": [
+      },
       {
-        "text": "Z3",
+        "name": "CLUTRR",
         "citations": [
-          "ye2023satlm"
+          "sinha2019clutrr"
+        ]
+      },
+      {
+        "name": "BoardgameQA",
+        "citations": [
+          "kazemi2023boardgameqa"
+        ]
+      },
+      {
+        "name": "ZebraLogic",
+        "citations": [
+          "lin2025zebralogic"
+        ]
+      },
+      {
+        "name": "Multi-LogiEval",
+        "citations": [
+          "patel2024multilogieval"
+        ]
+      },
+      {
+        "name": "LogicBench",
+        "citations": [
+          "parmar2024logicbench"
+        ]
+      },
+      {
+        "name": "LogiQA",
+        "citations": [
+          "liu2020logiqa"
+        ]
+      },
+      {
+        "name": "ReClor",
+        "citations": [
+          "yu2020reclor"
+        ]
+      },
+      {
+        "name": "LogicGraph",
+        "citations": [
+          "wu2026logicgraph"
+        ]
+      },
+      {
+        "name": "QUITE",
+        "citations": [
+          "corpus202610098105bca28867"
+        ]
+      },
+      {
+        "name": "CLEVR-POC",
+        "citations": [
+          "localverify3_40"
+        ]
+      },
+      {
+        "name": "MATH",
+        "citations": [
+          "hendrycks2021math"
+        ]
+      },
+      {
+        "name": "GSM-Symbolic",
+        "citations": [
+          "mirzadeh2025gsm"
+        ]
+      },
+      {
+        "name": "OlympiadBench",
+        "citations": [
+          "he2024olympiadbench"
+        ]
+      },
+      {
+        "name": "BeliefBank",
+        "citations": [
+          "kassner2021beliefbank"
+        ]
+      },
+      {
+        "name": "LiveBench",
+        "citations": [
+          "white2025livebench"
+        ]
+      },
+      {
+        "name": "ARC-AGI-2",
+        "citations": [
+          "chollet2025arcagi2"
+        ]
+      },
+      {
+        "name": "GSM8K",
+        "citations": [
+          "cobbe2021training"
+        ]
+      },
+      {
+        "name": "ProverQA",
+        "citations": [
+          "corpus202610097fd9cfb9dffb"
+        ]
+      },
+      {
+        "name": "BBH",
+        "citations": [
+          "suzgun2023challenging"
+        ]
+      },
+      {
+        "name": "StrategyQA",
+        "citations": [
+          "geva2021strategyqa"
+        ]
+      },
+      {
+        "name": "EntailmentBank",
+        "citations": [
+          "dalvi2021entailmentbank"
         ]
       }
     ]
   },
   {
-    "part": "Task solutions and formal models",
-    "name": "CLUTRR",
-    "category": "Relational reasoning",
-    "source": "Z3",
-    "modality": "Answer",
-    "citations": [
-      "sinha2019clutrr"
-    ],
-    "protocols": [
+    "task": "Constraint and optimization modeling",
+    "resource_count": 45,
+    "examples": [
       {
-        "text": "Z3",
+        "name": "NL4Opt",
         "citations": [
-          "ye2023satlm"
+          "ramamonjison2023nl4opt"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "NL4OPT",
-    "category": "Linear optimization",
-    "source": "Constraint programming",
-    "modality": "Verified solutions; solving accuracy",
-    "citations": [
-      "ramamonjison2023nl4opt"
-    ],
-    "protocols": [
+      },
       {
-        "text": "Constraint programming",
+        "name": "MAMO",
+        "citations": [
+          "huang2024mamo"
+        ]
+      },
+      {
+        "name": "IndustryOR",
+        "citations": [
+          "tang2024orlm"
+        ]
+      },
+      {
+        "name": "CP-Bench",
+        "citations": [
+          "michailidis2025cpbench"
+        ]
+      },
+      {
+        "name": "IndusCP",
         "citations": [
           "shi2025constraintllm"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "ComplexOR",
-    "category": "Mixed-integer modeling",
-    "source": "AutoOR evaluation",
-    "modality": "Reference solutions",
-    "citations": [
-      "xiao2024chain"
-    ],
-    "protocols": [
+      },
       {
-        "text": "AutoOR evaluation",
+        "name": "ASP-Bench",
         "citations": [
-          "motwani2026autoor"
+          "szeider2026asp"
+        ]
+      },
+      {
+        "name": "OptiBench",
+        "citations": [
+          "yang2025optibench"
+        ]
+      },
+      {
+        "name": "ReSocratic",
+        "citations": [
+          "yang2025optibench"
+        ]
+      },
+      {
+        "name": "Text2Zinc",
+        "citations": [
+          "singirikonda2503text2zinc"
+        ]
+      },
+      {
+        "name": "SATQuest",
+        "citations": [
+          "zhao2026satquest"
+        ]
+      },
+      {
+        "name": "FCoReBench",
+        "citations": [
+          "mittal2024fcorebench"
+        ]
+      },
+      {
+        "name": "CP-SynC",
+        "citations": [
+          "song2605cpsync"
+        ]
+      },
+      {
+        "name": "DecompGym",
+        "citations": [
+          "cheng2026decompgym"
+        ]
+      },
+      {
+        "name": "SMT-LIB",
+        "citations": [
+          "barrett2017smtlib"
+        ]
+      },
+      {
+        "name": "ComplexOR",
+        "citations": [
+          "xiao2024chain"
+        ]
+      },
+      {
+        "name": "NLP4LP",
+        "citations": [
+          "ahmaditeshnizi2024optimus"
+        ]
+      },
+      {
+        "name": "OptMATH",
+        "citations": [
+          "lu2025optmath"
         ]
       }
     ]
   },
   {
-    "part": "Task solutions and formal models",
-    "name": "IndustryOR",
-    "category": "Mixed-integer modeling",
-    "source": "AutoOR evaluation",
-    "modality": "Reference solutions",
-    "citations": [
-      "tang2024orlm"
-    ],
-    "protocols": [
+    "task": "Formal theorem proving",
+    "resource_count": 111,
+    "examples": [
       {
-        "text": "AutoOR evaluation",
+        "name": "miniF2F",
         "citations": [
-          "motwani2026autoor"
+          "zheng2022minif2f"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "IndusCP",
-    "category": "Combinatorial modeling",
-    "source": "Constraint programming",
-    "modality": "Solving accuracy",
-    "citations": [
-      "shi2025constraintllm"
-    ],
-    "protocols": [
+      },
       {
-        "text": "Constraint programming",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "CP-Bench",
-    "category": "Constraints / optimization",
-    "source": "CP-Agent revision; CPMpy",
-    "modality": "Withheld models and optima; feasibility/optimality",
-    "citations": [
-      "michailidis2025cpbench"
-    ],
-    "protocols": [
-      {
-        "text": "CP-Agent revision; CPMpy",
+        "name": "ProofNet",
         "citations": [
-          "szeider2026cpagent"
+          "azerbayev2023proofnet"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "ASP-Bench",
-    "category": "Logic programming / optimization",
-    "source": "ASP / Clingo",
-    "modality": "Reference validators; feasibility/optimality",
-    "citations": [
-      "szeider2026asp"
-    ],
-    "protocols": [
+      },
       {
-        "text": "ASP / Clingo",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "BlocksWorld-100 / Logistics-100",
-    "category": "Planning formalization",
-    "source": "PDDL; VAL validation",
-    "modality": "Withheld reference PDDL; plan correctness",
-    "citations": [
-      "huang2025limit"
-    ],
-    "protocols": [
-      {
-        "text": "PDDL; VAL validation",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "CoPE: BlocksWorld; CoinCollector",
-    "category": "Constrained planning",
-    "source": "PDDL",
-    "modality": "Reference PDDL; constraint-valid plans",
-    "citations": [
-      "huang2026cope"
-    ],
-    "protocols": [
-      {
-        "text": "PDDL",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "PlanBench",
-    "category": "Plan verification",
-    "source": "Verification variant; NuSMV / LTL",
-    "modality": "Plan validity; unknown",
-    "citations": [
-      "valmeekam2023planbench"
-    ],
-    "protocols": [
-      {
-        "text": "Verification variant; NuSMV / LTL",
+        "name": "LeanDojo",
         "citations": [
-          "corpus20261009d728294efd40"
-        ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "ALFWorld",
-    "category": "Embodied planning",
-    "source": "NeSyC; ASP",
-    "modality": "Task success under dynamics",
-    "citations": [
-      "shridhar2020alfworld"
-    ],
-    "protocols": [
-      {
-        "text": "NeSyC; ASP",
-        "citations": [
-          "choi2025nesyc"
-        ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "VirtualHome",
-    "category": "Embodied safety",
-    "source": "SENTINEL; LTL",
-    "modality": "Reference constraints; agreement and plan safety",
-    "citations": [
-      "puig2018virtualhome"
-    ],
-    "protocols": [
-      {
-        "text": "SENTINEL; LTL",
-        "citations": [
-          "zhan2025sentinel"
-        ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "RuleArena",
-    "category": "Policy reasoning",
-    "source": "ASP / Clingo",
-    "modality": "Decision accuracy; robustness",
-    "citations": [
-      "zhou2025rulearena"
-    ],
-    "protocols": [
-      {
-        "text": "ASP / Clingo",
-        "citations": [
-          "nair2026policy"
-        ]
-      }
-    ]
-  },
-  {
-    "part": "Task solutions and formal models",
-    "name": "DecompGym",
-    "category": "Decomposition algorithm design",
-    "source": "Solver-backed output tests; GPT method judge",
-    "modality": "Numerical quality and judged method conformance",
-    "citations": [
-      "cheng2026decompgym"
-    ],
-    "protocols": [
-      {
-        "text": "Solver-backed output tests; GPT method judge",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "miniF2F",
-    "category": "Theorem proving",
-    "source": "Lean kernel",
-    "modality": "Supplied theorems; proof Pass@$k$",
-    "citations": [
-      "zheng2022minif2f"
-    ],
-    "protocols": [
-      {
-        "text": "Lean kernel",
-        "citations": [
-          "xin2024deepseekprover",
           "yang2023leandojo"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "ProofNet",
-    "category": "Theorem proving",
-    "source": "Lean 4 port; Lean kernel",
-    "modality": "Proof success; Pass@$k$",
-    "citations": [
-      "azerbayev2023proofnet"
-    ],
-    "protocols": [
+      },
       {
-        "text": "Lean 4 port; Lean kernel",
+        "name": "PISA",
         "citations": [
-          "xin2024deepseekprover"
+          "jiang2021lisa"
+        ]
+      },
+      {
+        "name": "FIMO",
+        "citations": [
+          "liu2023fimo"
+        ]
+      },
+      {
+        "name": "PutnamBench",
+        "citations": [
+          "tsoukalas2024putnambench"
+        ]
+      },
+      {
+        "name": "Lean Workbook",
+        "citations": [
+          "ying2024lean"
+        ]
+      },
+      {
+        "name": "LeanCat",
+        "citations": [
+          "xu2025leancat"
+        ]
+      },
+      {
+        "name": "SqueezeBench",
+        "citations": [
+          "manrique2026squeezebench"
+        ]
+      },
+      {
+        "name": "FormalMATH",
+        "citations": [
+          "yu2025formalmath"
+        ]
+      },
+      {
+        "name": "TRIGO",
+        "citations": [
+          "corpus202610097f862d4a9edb"
+        ]
+      },
+      {
+        "name": "TaoBench",
+        "citations": [
+          "taylor2026taobench"
+        ]
+      },
+      {
+        "name": "MathlibLemma",
+        "citations": [
+          "liu2026mathliblemma"
+        ]
+      },
+      {
+        "name": "APE-Bench",
+        "citations": [
+          "xin2025ape"
+        ]
+      },
+      {
+        "name": "FormalTCS",
+        "citations": [
+          "wang2026formaltcs"
+        ]
+      },
+      {
+        "name": "Herald",
+        "citations": [
+          "gao2025herald"
+        ]
+      },
+      {
+        "name": "Omni-MATH",
+        "citations": [
+          "gao2025omnimath"
+        ]
+      },
+      {
+        "name": "FMC",
+        "citations": [
+          "xie2025fmc"
+        ]
+      },
+      {
+        "name": "IndiMathBench",
+        "citations": [
+          "biyani2025indimathbench"
+        ]
+      },
+      {
+        "name": "ITPEval",
+        "citations": [
+          "wu2026itpeval"
+        ]
+      },
+      {
+        "name": "Ineq-Comp",
+        "citations": [
+          "corpus20261009d7f3e5b5c1fc"
+        ]
+      },
+      {
+        "name": "OEIS Open",
+        "citations": [
+          "adamczewski2026oeis"
+        ]
+      },
+      {
+        "name": "StochBench",
+        "citations": [
+          "davidovich2026stochbench"
+        ]
+      },
+      {
+        "name": "AxQM",
+        "citations": [
+          "yin2026axqm"
+        ]
+      },
+      {
+        "name": "miniF2F-Dafny",
+        "citations": [
+          "baksys2025minif2f"
         ]
       }
     ]
   },
   {
-    "part": "Construction of checked formal artifacts",
-    "name": "FIMO",
-    "category": "Theorem proving",
-    "source": "Lean kernel",
-    "modality": "Proof success; Pass@$k$",
-    "citations": [
-      "liu2023fimo"
-    ],
-    "protocols": [
+    "task": "Program and specification verification",
+    "resource_count": 151,
+    "examples": [
       {
-        "text": "Lean kernel",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "PutnamBench",
-    "category": "Theorem proving",
-    "source": "DSP+ Lean subset",
-    "modality": "Proof success",
-    "citations": [
-      "tsoukalas2024putnambench"
-    ],
-    "protocols": [
-      {
-        "text": "DSP+ Lean subset",
+        "name": "DafnyBench",
         "citations": [
-          "corpus202610095c24eb6d4be3"
+          "loughridge2024dafnybench"
+        ]
+      },
+      {
+        "name": "Code2Inv",
+        "citations": [
+          "si2020code2inv"
+        ]
+      },
+      {
+        "name": "SV-COMP",
+        "citations": [
+          "beyer2023svcomp"
+        ]
+      },
+      {
+        "name": "VerusBench",
+        "citations": [
+          "yang2025autoverus"
+        ]
+      },
+      {
+        "name": "SpecGenBench",
+        "citations": [
+          "corpus202610099d0d88ee902b"
+        ]
+      },
+      {
+        "name": "OSVBench",
+        "citations": [
+          "li2026osvbench"
+        ]
+      },
+      {
+        "name": "CLEVER",
+        "citations": [
+          "corpus202610099066766d45e7"
+        ]
+      },
+      {
+        "name": "AlgoVeri",
+        "citations": [
+          "zhao2026algoveri"
+        ]
+      },
+      {
+        "name": "Vericoding",
+        "citations": [
+          "bursuc2025benchmark"
+        ]
+      },
+      {
+        "name": "Alloy4Fun",
+        "citations": [
+          "macedo2021alloy4fun"
+        ]
+      },
+      {
+        "name": "SWE-bench",
+        "citations": [
+          "jimenez2024swebench"
+        ]
+      },
+      {
+        "name": "VeriSoftBench",
+        "citations": [
+          "xin2026verisoftbench"
+        ]
+      },
+      {
+        "name": "LiveFMBench",
+        "citations": [
+          "xu2026livefmbench"
+        ]
+      },
+      {
+        "name": "CryptoFormalEval",
+        "citations": [
+          "curaba2024cryptoformaleval"
+        ]
+      },
+      {
+        "name": "CASP",
+        "citations": [
+          "corpus20261009581cdc3e93ed"
+        ]
+      },
+      {
+        "name": "Selene",
+        "citations": [
+          "corpus2026100994cd245dc1ff"
+        ]
+      },
+      {
+        "name": "VERINA",
+        "citations": [
+          "ye2025verina"
+        ]
+      },
+      {
+        "name": "HumanEval",
+        "citations": [
+          "chen2021humaneval"
+        ]
+      },
+      {
+        "name": "HumanEval+",
+        "citations": [
+          "liu2023evalplus"
+        ]
+      },
+      {
+        "name": "MBPP",
+        "citations": [
+          "austin2021mbpp"
+        ]
+      },
+      {
+        "name": "LiveCodeBench",
+        "citations": [
+          "jain2024livecodebench"
+        ]
+      },
+      {
+        "name": "SyGuS",
+        "citations": [
+          "alur2013sygus"
         ]
       }
     ]
   },
   {
-    "part": "Construction of checked formal artifacts",
-    "name": "LeanDojo",
-    "category": "Library theorem proving",
-    "source": "Lean / mathlib",
-    "modality": "Split-specific proof success",
-    "citations": [
-      "yang2023leandojo"
-    ],
-    "protocols": [
+    "task": "Planning and embodied behavior",
+    "resource_count": 82,
+    "examples": [
       {
-        "text": "Lean / mathlib",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "PISA",
-    "category": "Library theorem proving",
-    "source": "Isabelle; Baldur split",
-    "modality": "Proof success",
-    "citations": [
-      "jiang2021lisa"
-    ],
-    "protocols": [
-      {
-        "text": "Isabelle; Baldur split",
+        "name": "PlanBench",
         "citations": [
-          "first2023baldur"
+          "valmeekam2023planbench"
+        ]
+      },
+      {
+        "name": "BlocksWorld-100",
+        "citations": [
+          "huang2025limit"
+        ]
+      },
+      {
+        "name": "CoPE",
+        "citations": [
+          "huang2026cope"
+        ]
+      },
+      {
+        "name": "ALFWorld",
+        "citations": [
+          "shridhar2020alfworld"
+        ]
+      },
+      {
+        "name": "VirtualHome",
+        "citations": [
+          "puig2018virtualhome"
+        ]
+      },
+      {
+        "name": "AppWorld",
+        "citations": [
+          "lee2026symbolic"
+        ]
+      },
+      {
+        "name": "NaturalPlan",
+        "citations": [
+          "zheng2024natural"
+        ]
+      },
+      {
+        "name": "TravelPlanner",
+        "citations": [
+          "xie2024travelplanner"
+        ]
+      },
+      {
+        "name": "ChinaTravel",
+        "citations": [
+          "shao2024chinatravel"
+        ]
+      },
+      {
+        "name": "Can-Do",
+        "citations": [
+          "chia2024can"
+        ]
+      },
+      {
+        "name": "SokoBench",
+        "citations": [
+          "corpus20261009c8082bf64b16"
+        ]
+      },
+      {
+        "name": "τ-bench",
+        "citations": [
+          "yao2024taubench"
+        ]
+      },
+      {
+        "name": "τ^2-bench",
+        "citations": [
+          "barres2025tau2"
+        ]
+      },
+      {
+        "name": "ALFRED",
+        "citations": [
+          "shridhar2020alfred"
+        ]
+      },
+      {
+        "name": "BEHAVIOR-1K",
+        "citations": [
+          "li2024behavior1k"
+        ]
+      },
+      {
+        "name": "ViPlan",
+        "citations": [
+          "merler2025viplan"
+        ]
+      },
+      {
+        "name": "Planetarium",
+        "citations": [
+          "zuo2025planetarium"
+        ]
+      },
+      {
+        "name": "BabyAI",
+        "citations": [
+          "chevalierboisvert2019babyai"
         ]
       }
     ]
   },
   {
-    "part": "Construction of checked formal artifacts",
-    "name": "DafnyBench",
-    "category": "Verification hints",
-    "source": "Dafny verifier",
-    "modality": "Contract-preserving verification",
-    "citations": [
-      "loughridge2024dafnybench"
-    ],
-    "protocols": [
+    "task": "Safety and policy reasoning",
+    "resource_count": 26,
+    "examples": [
       {
-        "text": "Dafny verifier",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "Verus-Bench",
-    "category": "Verification completion",
-    "source": "Verus / SMT",
-    "modality": "Proof success",
-    "citations": [
-      "yang2025autoverus"
-    ],
-    "protocols": [
-      {
-        "text": "Verus / SMT",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "Code2Inv",
-    "category": "Invariant generation",
-    "source": "Z3",
-    "modality": "Verified invariants",
-    "citations": [
-      "si2020code2inv"
-    ],
-    "protocols": [
-      {
-        "text": "Z3",
+        "name": "RuleArena",
         "citations": [
-          "bharti2025loop"
+          "zhou2025rulearena"
+        ]
+      },
+      {
+        "name": "AgentDojo",
+        "citations": [
+          "debenedetti2024agentdojo"
+        ]
+      },
+      {
+        "name": "AgentDyn",
+        "citations": [
+          "li2026agentdyn"
+        ]
+      },
+      {
+        "name": "CedarBench",
+        "citations": [
+          "vatsa2026autocedar"
+        ]
+      },
+      {
+        "name": "BarrierBench",
+        "citations": [
+          "coverage20261009s248"
+        ]
+      },
+      {
+        "name": "CedarInstruct",
+        "citations": [
+          "zhou2026raise"
+        ]
+      },
+      {
+        "name": "Agent-SafetyBench",
+        "citations": [
+          "zhang2024agentsafetybench"
+        ]
+      },
+      {
+        "name": "ShieldAgent-Bench",
+        "citations": [
+          "taxexp20261006a174"
+        ]
+      },
+      {
+        "name": "XSTest",
+        "citations": [
+          "rottger2024xstest"
         ]
       }
     ]
   },
   {
-    "part": "Construction of checked formal artifacts",
-    "name": "SV-COMP 2023",
-    "category": "Program-property verification",
-    "source": "LEMUR subset; ESBMC / UAutomizer",
-    "modality": "Verified properties",
-    "citations": [
-      "beyer2023svcomp"
-    ],
-    "protocols": [
+    "task": "Formalization and translation",
+    "resource_count": 51,
+    "examples": [
       {
-        "text": "LEMUR subset; ESBMC / UAutomizer",
+        "name": "ProofNet#",
         "citations": [
-          "wu2024lemur"
+          "poiroux2406reliable"
+        ]
+      },
+      {
+        "name": "LeanEuclid",
+        "citations": [
+          "corpus202610093199a3cc7885"
+        ]
+      },
+      {
+        "name": "NL2TL",
+        "citations": [
+          "chen2023nl2tl"
+        ]
+      },
+      {
+        "name": "auto-nesy-bench",
+        "citations": [
+          "bortolotti2026auto"
+        ]
+      },
+      {
+        "name": "SHADOWBENCH",
+        "citations": [
+          "han2026shadowbench"
+        ]
+      },
+      {
+        "name": "FaithformBench",
+        "citations": [
+          "cornish2026faithformbench"
+        ]
+      },
+      {
+        "name": "PROC2PDDL",
+        "citations": [
+          "corpus20261009acbddbfe4ed5"
+        ]
+      },
+      {
+        "name": "Natural2CTL",
+        "citations": [
+          "corpus20261009dea0b8561a54"
+        ]
+      },
+      {
+        "name": "RTPbench",
+        "citations": [
+          "cao2024rtpbench"
+        ]
+      },
+      {
+        "name": "nl2spec",
+        "citations": [
+          "cosler2023nl2spec"
+        ]
+      },
+      {
+        "name": "Verus-SpecBench",
+        "citations": [
+          "agarwal2026verus"
+        ]
+      },
+      {
+        "name": "Def_Wiki",
+        "citations": [
+          "zhang2025autoformalization"
+        ]
+      },
+      {
+        "name": "SysMoBench",
+        "citations": [
+          "cheng2025sysmobench"
         ]
       }
     ]
   },
   {
-    "part": "Construction of checked formal artifacts",
-    "name": "SpecGenBench",
-    "category": "Contract generation",
-    "source": "OpenJML",
-    "modality": "Verifiable specifications",
-    "citations": [
-      "corpus202610099d0d88ee902b"
-    ],
-    "protocols": [
+    "task": "Verification diagnostics",
+    "resource_count": 21,
+    "examples": [
       {
-        "text": "OpenJML",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "Alloy4Fun",
-    "category": "Relational-specification repair",
-    "source": "Alloy Analyzer repair",
-    "modality": "Repair validation",
-    "citations": [
-      "macedo2021alloy4fun"
-    ],
-    "protocols": [
-      {
-        "text": "Alloy Analyzer repair",
+        "name": "ProofNetVerif",
         "citations": [
-          "coverage20261009s251"
+          "poiroux2406reliable"
+        ]
+      },
+      {
+        "name": "FaithAlign",
+        "citations": [
+          "feng2026aligning"
+        ]
+      },
+      {
+        "name": "LeanReviewBench",
+        "citations": [
+          "shen2026mechalign"
+        ]
+      },
+      {
+        "name": "VeriEquivBench",
+        "citations": [
+          "zeng2025veriequivbench"
+        ]
+      },
+      {
+        "name": "ProcessBench",
+        "citations": [
+          "zheng2024processbench"
+        ]
+      },
+      {
+        "name": "ProofLoc",
+        "citations": [
+          "wang2026faithsieve"
+        ]
+      },
+      {
+        "name": "Python-by-Contract",
+        "citations": [
+          "richter2025beyond"
+        ]
+      },
+      {
+        "name": "VIFBench",
+        "citations": [
+          "su2026neuro"
+        ]
+      },
+      {
+        "name": "Veri-Reason",
+        "citations": [
+          "li2026learning2"
         ]
       }
     ]
   },
   {
-    "part": "Construction of checked formal artifacts",
-    "name": "OSVBench",
-    "category": "OS specification generation",
-    "source": "Z3 / state model",
-    "modality": "Specification Pass@1",
-    "citations": [
-      "li2026osvbench"
-    ],
-    "protocols": [
+    "task": "Cross-task resources",
+    "resource_count": 3,
+    "examples": [
       {
-        "text": "Z3 / state model",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "Vericoding benchmark",
-    "category": "Verified implementation synthesis",
-    "source": "Dafny; Verus; Lean",
-    "modality": "Verified implementation",
-    "citations": [
-      "bursuc2025benchmark"
-    ],
-    "protocols": [
-      {
-        "text": "Dafny; Verus; Lean",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "SqueezeBench",
-    "category": "Extremal mathematical bounds",
-    "source": "Comparator; Lean; nanoda",
-    "modality": "Trusted challenges; certified bound improvement",
-    "citations": [
-      "manrique2026squeezebench"
-    ],
-    "protocols": [
-      {
-        "text": "Comparator; Lean; nanoda",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Construction of checked formal artifacts",
-    "name": "DynaCertBench",
-    "category": "Dynamical-system certificates",
-    "source": "SMT; Lean",
-    "modality": "All stated certificate obligations",
-    "citations": [
-      "cao2026llm2cert"
-    ],
-    "protocols": [
-      {
-        "text": "SMT; Lean",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "ProofNet#",
-    "category": "Statement formalization",
-    "source": "Lean statements",
-    "modality": "Reference statements; equivalence assessment",
-    "citations": [
-      "poiroux2406reliable"
-    ],
-    "protocols": [
-      {
-        "text": "Lean statements",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "RLM25",
-    "category": "Statement formalization",
-    "source": "Lean statements",
-    "modality": "Reference statements; equivalence assessment",
-    "citations": [
-      "poiroux2406reliable"
-    ],
-    "protocols": [
-      {
-        "text": "Lean statements",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "Beyond Compilation (v1)",
-    "category": "Statement formalization",
-    "source": "Lean compilation",
-    "modality": "Semantic judges; strict consensus",
-    "citations": [
-      "zhang2026beyond2"
-    ],
-    "protocols": [
-      {
-        "text": "Lean compilation",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "ITPEval",
-    "category": "Cross-prover translation",
-    "source": "Lean; Rocq; Isabelle; HOL Light",
-    "modality": "Native acceptance; BEq",
-    "citations": [
-      "wu2026itpeval"
-    ],
-    "protocols": [
-      {
-        "text": "Lean; Rocq; Isabelle; HOL Light",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "ProofNetVerif",
-    "category": "Metric calibration",
-    "source": "BEqL / BEq+ assessment",
-    "modality": "Human semantic labels; precision/recall",
-    "citations": [
-      "poiroux2406reliable"
-    ],
-    "protocols": [
-      {
-        "text": "BEqL / BEq+ assessment",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "FaithformBench",
-    "category": "Validity preservation",
-    "source": "Formal validity checks",
-    "modality": "Error induction; correction",
-    "citations": [
-      "cornish2026faithformbench"
-    ],
-    "protocols": [
-      {
-        "text": "Formal validity checks",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "ProcessBench",
-    "category": "Step-error diagnosis",
-    "source": "Coq / formal critic",
-    "modality": "Detection F1",
-    "citations": [
-      "zheng2024processbench"
-    ],
-    "protocols": [
-      {
-        "text": "Coq / formal critic",
+        "name": "BIG-bench",
         "citations": [
-          "zhou2025step"
+          "srivastava2023beyond"
         ]
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "SAT-Menu",
-    "category": "Constraint difficulty diagnosis",
-    "source": "MiniSat",
-    "modality": "Accuracy; phase transition",
-    "citations": [
-      "hazra2024can"
-    ],
-    "protocols": [
+      },
       {
-        "text": "MiniSat",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "CloverBench",
-    "category": "Acceptance-gate diagnosis",
-    "source": "Dafny; tests; docstring judgments",
-    "modality": "Correct/adversarial examples; acceptance",
-    "citations": [
-      "sun2024clover"
-    ],
-    "protocols": [
+        "name": "ITBench",
+        "citations": [
+          "jha2025itbench"
+        ]
+      },
       {
-        "text": "Dafny; tests; docstring judgments",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "FaithAlign",
-    "category": "Theory-scale formalization",
-    "source": "Lean context; link-level assessment",
-    "modality": "Expert-reviewed verdicts and defect links",
-    "citations": [
-      "feng2026aligning"
-    ],
-    "protocols": [
-      {
-        "text": "Lean context; link-level assessment",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "MechAlign",
-    "category": "Project-level alignment",
-    "source": "Lean build; definition context",
-    "modality": "Provisional model alignment labels",
-    "citations": [
-      "shen2026mechalign"
-    ],
-    "protocols": [
-      {
-        "text": "Lean build; definition context",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "LeanTrail",
-    "category": "Paper-to-Lean coverage",
-    "source": "Transitive sorry audit; axiom listing",
-    "modality": "Consensus alignment; same-audit proof status",
-    "citations": [
-      "venturim2026has"
-    ],
-    "protocols": [
-      {
-        "text": "Transitive sorry audit; axiom listing",
-        "citations": []
-      }
-    ]
-  },
-  {
-    "part": "Correspondence and verifier diagnostics",
-    "name": "RefactorProof",
-    "category": "Proof stability after refactoring",
-    "source": "Separate Lean equivalence certificate",
-    "modality": "Fixed specification and proof; unchanged survival",
-    "citations": [
-      "mandiga2026stable"
-    ],
-    "protocols": [
-      {
-        "text": "Separate Lean equivalence certificate",
-        "citations": []
+        "name": "Super-NaturalInstructions",
+        "citations": [
+          "wang2022supernaturalinstructions"
+        ]
       }
     ]
   }

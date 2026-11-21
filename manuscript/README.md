@@ -1,13 +1,22 @@
-# Manuscript
+# Solver-in-the-Loop: A Survey of Symbolic Solver Integration in Large Language Model Reasoning
 
-**Symbolic Solvers for Verifiable Large Language Model Reasoning: A Survey**
+Yishuai Geng, Guohui Xiao, Guilin Qi, Tianxing Wu, and Peifeng Zhang
 
-Yishuai Geng, Guohui Xiao, Guilin Qi, Tianxing Wu, Huajun Chen, and Haofen Wang.
+School of Computer Science and Engineering, Southeast University, China
 
-Manuscript in preparation · Public paper links will be added when available.
+Key Laboratory of New Generation Artificial Intelligence Technology and Its Interdisciplinary Applications, Ministry of Education, China
 
-The manuscript PDF and a verified arXiv or publication link will be added after finalization or public posting.
+Preprint in preparation.
 
-A paper citation will be added when the manuscript is public. For now, you can cite this companion repository.
+Companion materials correspond to the manuscript snapshot dated 2026-11-21.
 
-Repository citation: [CITATION.cff](../CITATION.cff). Manuscript references: [bibliography](../references/README.md).
+## Reading guide
+
+| Manuscript sections | Companion materials |
+| --- | --- |
+| §2 · Scope and review methodology | [Review scope and eligibility](../docs/methodology.md) · [Search and selection](../docs/review-flow.md) |
+| §§3–5 · Foundations, functional roles, and interaction mechanisms | [Survey framework](../docs/taxonomy.md) · [Papers by role](../papers/README.md) |
+| §6 · Evaluation and reliability | [Evaluation guide](../analysis/README.md) · [Reliability boundaries](../docs/taxonomy.md#from-a-formal-check-to-a-claim-about-a-task) |
+| Bibliography | [Manuscript references](../references/README.md) · [BibTeX](../references/references.bib) |
+
+[All survey figures](../assets/README.md) · [Repository citation](../README.md#citation)

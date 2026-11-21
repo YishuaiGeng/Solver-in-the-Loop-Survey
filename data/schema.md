@@ -36,3 +36,5 @@ The snapshot version identifies the retained data edition. Routine documentation
 October additions retain `STUDY-OCT26-<arXiv ID>` and `OCT26-ARXIV-<arXiv ID>` from the confirmed records. An unversioned report ID is not a claim about which arXiv revision was consulted. `data/review-flow.json` contains aggregate counts for the completed selection cohort shown in Figure 2; it is distinct from the included-study catalogue.
 
 The retained `version` and `release_date` identify the last tagged release. `companion_snapshot_date` identifies the current main-branch data refresh, which can include later confirmed records. Existing tags are unchanged.
+
+`analysis/benchmarks.json` records the current manuscript's Table 1. Each group has a primary `task`, a `resource_count` for distinct evaluation resources in that group, and representative `examples` with names and manuscript citation keys. The snapshot records the total resource count and the number of displayed examples.

@@ -1,6 +1,13 @@
 # Updates
 
-## Current main — 2026-11-05
+## 2026-11-21 — Companion refresh
+
+- Reorganized the repository homepage around the author-supplied SVG, current manuscript title and byline, and direct links to the catalogue, figures, and citation data.
+- Added a manuscript reading guide and connected the role taxonomy, interaction mechanisms, study selection, evaluation, and data pages to the corresponding manuscript sections and figures.
+- Synchronized the manuscript bibliography and method index with the current citation set and functional taxonomy. Refreshed the artwork for all twelve numbered figures.
+- Replaced the earlier benchmark guide with Table 1's primary task groups, counts, and representative examples. The study catalogue retains the confirmed October corpus.
+
+## 2026-11-05 — October corpus alignment
 
 - Align the title and review window with the current manuscript through October 2026.
 - Append 30 author-confirmed studies: 1,459 studies / 1,745 reports, with stable existing identities.

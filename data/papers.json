@@ -18911,8 +18911,10 @@
     ],
     "role_status": "classified",
     "report_type": "preprint",
-    "bibtex_keys": [],
-    "record_version": 1
+    "bibtex_keys": [
+      "han2026shadowbench"
+    ],
+    "record_version": 2
   },
   {
     "study_id": "STUDY-SEP26-2608.29716",
@@ -19229,8 +19231,10 @@
     ],
     "role_status": "classified",
     "report_type": "preprint",
-    "bibtex_keys": [],
-    "record_version": 1
+    "bibtex_keys": [
+      "yin2026axqm"
+    ],
+    "record_version": 2
   },
   {
     "study_id": "STUDY-SEP26-2609.05221",
@@ -19365,8 +19369,10 @@
     ],
     "role_status": "classified",
     "report_type": "preprint",
-    "bibtex_keys": [],
-    "record_version": 1
+    "bibtex_keys": [
+      "davidovich2026stochbench"
+    ],
+    "record_version": 2
   },
   {
     "study_id": "STUDY-SEP26-2609.09898",

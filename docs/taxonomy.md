@@ -1,6 +1,6 @@
-# Solver roles and verification boundaries
+# Solver roles, interaction mechanisms, and reliability
 
-[Method index](method-index.md) · [Classified papers](../papers/README.md)
+[Method index](method-index.md) · [Papers by role](../papers/README.md) · [Figure index](../assets/README.md)
 
 The taxonomy follows the **consumer of the solver signal**. The same symbolic engine can support different roles, and one system can combine several roles.
 
@@ -16,7 +16,11 @@ The taxonomy follows the **consumer of the solver signal**. The same symbolic en
 
 [![Full role taxonomy](../assets/figures/taxonomy.png)](../assets/figures/taxonomy.png)
 
-[Open the taxonomy at full resolution](../assets/figures/taxonomy.png). Representative methods follow the current manuscript diagram.
+The branches group representative methods. A system can combine several roles, for example by using a solver verdict to select a candidate and a counterexample to revise it. [Figure 10](../assets/figures/role-integration.png)
+
+## Interaction mechanisms
+
+Section 5 describes model–solver interaction by topology, invocation control, intervention granularity, information exchange, multi-solver orchestration, and solver placement during training and inference. [Figure 11](../assets/figures/interaction-overview.png)
 
 ## From a formal check to a claim about a task
 

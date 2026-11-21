@@ -163,22 +163,34 @@ def render():
     link_labels = [('arxiv_url','arXiv'),('pdf_url','Paper PDF'),('doi_url','Publication / DOI')]
     paper_links = [f'[{label}](<{links[key]}>)' for key,label in link_labels if links[key]!='not_reported']
     paper_status = {
-        'in_preparation':'Manuscript in preparation · Public paper links will be added when available.',
-        'preprint':'Preprint available · See the paper links above for the current public version.',
-        'published':'Published paper · See the paper links above for the publication and available versions.',
+        'in_preparation': 'Preprint in preparation.',
+        'preprint': 'Preprint available.',
+        'published': 'Published paper.',
     }[links['status']]
-    paper_nav = ' · '.join(paper_links) if paper_links else 'Paper link forthcoming · [Manuscript information](manuscript/README.md)'
-    citation_status = ('A paper citation will be added when the manuscript is public. For now, you can cite this companion repository.'
-        if not paper_links else 'Please cite the survey using its public paper record. The companion repository can be cited separately when using its catalogue or data.')
-    manuscript = ['# Manuscript','',
-        '**Symbolic Solvers for Verifiable Large Language Model Reasoning: A Survey**','',
-        'Yishuai Geng, Guohui Xiao, Guilin Qi, Tianxing Wu, Huajun Chen, and Haofen Wang.','',paper_status,'']
+    paper_nav = ' · '.join([*paper_links, '[Manuscript](manuscript/README.md)'])
+    citation_status = 'Cite the companion repository when using its catalogue, data, or figures.'
     if paper_links:
-        manuscript += [' · '.join(paper_links),'']
-    else:
-        manuscript += ['The manuscript PDF and a verified arXiv or publication link will be added after finalization or public posting.','']
-    manuscript += [citation_status,'',
-        'Repository citation: [CITATION.cff](../CITATION.cff). Manuscript references: [bibliography](../references/README.md).','']
+        citation_status = 'Cite the survey using its public paper record. ' + citation_status
+    manuscript = [
+        '# Solver-in-the-Loop: A Survey of Symbolic Solver Integration in Large Language Model Reasoning', '',
+        'Yishuai Geng, Guohui Xiao, Guilin Qi, Tianxing Wu, and Peifeng Zhang', '',
+        'School of Computer Science and Engineering, Southeast University, China', '',
+        'Key Laboratory of New Generation Artificial Intelligence Technology and Its Interdisciplinary Applications, Ministry of Education, China', '',
+        paper_status, '',
+        f"Companion materials correspond to the manuscript snapshot dated {snap['manuscript_snapshot_date']}.", '',
+    ]
+    if paper_links:
+        manuscript += [' · '.join(paper_links), '']
+    manuscript += [
+        '## Reading guide', '',
+        '| Manuscript sections | Companion materials |',
+        '| --- | --- |',
+        '| §2 · Scope and review methodology | [Review scope and eligibility](../docs/methodology.md) · [Search and selection](../docs/review-flow.md) |',
+        '| §§3–5 · Foundations, functional roles, and interaction mechanisms | [Survey framework](../docs/taxonomy.md) · [Papers by role](../papers/README.md) |',
+        '| §6 · Evaluation and reliability | [Evaluation guide](../analysis/README.md) · [Reliability boundaries](../docs/taxonomy.md#from-a-formal-check-to-a-claim-about-a-task) |',
+        '| Bibliography | [Manuscript references](../references/README.md) · [BibTeX](../references/references.bib) |', '',
+        '[All survey figures](../assets/README.md) · [Repository citation](../README.md#citation)', '',
+    ]
     outputs['manuscript/README.md'] = '\n'.join(manuscript)
 
     template = (ROOT/'scripts/README.template').read_text(encoding='utf-8')
@@ -217,19 +229,32 @@ def render():
         mlines.append('| ' + ' | '.join([method_link, md(m['role'] + ' · ' + m['direction']),
                       source_link(ref['title'],ref['url']), md(ref['year'])]) + ' |')
     outputs['docs/method-index.md'] = '\n'.join(mlines) + '\n'
-    blines = ['# Benchmarks and protocols','', '[Analysis notes](README.md) · [References](../references/README.md)', '',
-        'Representative resources from the manuscript evaluation table. The solver column describes a documented use configuration; '
-        'it does not assert that the resource requires that solver. Resource-introduction citations and configuration-use citations are kept separate.', '']
-    groups = defaultdict(list)
-    for b in load('analysis/benchmarks.json'):
-        groups[b['part']].append(b)
-    for part, items in groups.items():
-        blines += ['## '+part, '', '| Benchmark / protocol | Task | Solver / reference | Evaluation target |', '| --- | --- | --- | --- |']
-        for b in items:
-            title = md(b['name']) + ' ' + ', '.join(ref_link(k) for k in b['citations'])
-            protocols = '; '.join(md(p['text']) + ' ' + ', '.join(ref_link(k) for k in p['citations']) for p in b['protocols'])
-            blines.append(f"| {title} | {md(b['category'])} | {protocols} | {md(b['modality'])} |")
+    if 'benchmark_resources' in snap:
+        blines = ['# Evaluation tasks and benchmarks', '',
+                  '[Analysis notes](README.md) · [Machine-readable table](benchmarks.json)', '',
+                  f"Table 1 groups {snap['benchmark_resources']:,} distinct evaluation resources by their primary task. "
+                  'The examples below reproduce the benchmarks listed in the manuscript table.', '',
+                  '| Primary task | Distinct resources | Representative benchmarks |',
+                  '| --- | ---: | --- |']
+        for group in load('analysis/benchmarks.json'):
+            examples = (md(example['name']) + ' (' + ', '.join(ref_link(key) for key in example['citations']) + ')'
+                        for example in group['examples'])
+            blines.append(f"| {md(group['task'])} | {group['resource_count']} | " + ' · '.join(examples) + ' |')
         blines.append('')
+    else:
+        blines = ['# Benchmarks and protocols','', '[Analysis notes](README.md) · [References](../references/README.md)', '',
+            'Representative resources from the manuscript evaluation table. The solver column describes a documented use configuration; '
+            'it does not assert that the resource requires that solver. Resource-introduction citations and configuration-use citations are kept separate.', '']
+        groups = defaultdict(list)
+        for b in load('analysis/benchmarks.json'):
+            groups[b['part']].append(b)
+        for part, items in groups.items():
+            blines += ['## '+part, '', '| Benchmark / protocol | Task | Solver / reference | Evaluation target |', '| --- | --- | --- | --- |']
+            for b in items:
+                title = md(b['name']) + ' ' + ', '.join(ref_link(k) for k in b['citations'])
+                protocols = '; '.join(md(p['text']) + ' ' + ', '.join(ref_link(k) for k in p['citations']) for p in b['protocols'])
+                blines.append(f"| {title} | {md(b['category'])} | {protocols} | {md(b['modality'])} |")
+            blines.append('')
     outputs['analysis/benchmarks.md'] = '\n'.join(blines)
     flow = load('data/review-flow.json')
     counts = flow['counts']

@@ -1,8 +1,19 @@
-# Benchmarks and analysis
+# Evaluation and analysis
 
-[Benchmark guide](benchmarks.md) · [Literature catalogue](../papers/catalogue.md) · [Scope](../docs/methodology.md)
+[Manuscript](../manuscript/README.md) · [Literature catalogue](../papers/catalogue.md) · [Scope](../docs/methodology.md)
 
-The benchmark guide groups representative resources by task solutions and formal models, checked-artifact construction, and correspondence/verification diagnostics. It distinguishes the resource's original publication from the paper documenting a solver-use configuration.
+## Evaluation in the survey
+
+The survey groups 672 distinct evaluation resources by primary task. The benchmark guide presents Table 1’s resource counts and representative examples. [Table 1 guide](benchmarks.md) · [JSON](benchmarks.json)
+
+Tables 2–5 in §6.3 organize selected within-study comparisons by the intervention being evaluated.
+
+| Table | Intervention |
+| --- | --- |
+| 2 | Delegating computation to the solver |
+| 3 | Checking and repairing candidates within an attempt |
+| 4 | Using solver feedback to guide search |
+| 5 | Learning from solver results |
 
 ## Downloads and coverage
 

@@ -1,6 +1,6 @@
 # Scope and interpretation
 
-This companion accompanies *Symbolic Solvers for Verifiable Large Language Model Reasoning: A Survey*. It provides the literature catalogue, taxonomy, cited bibliography, illustrations, and descriptive analyses supporting the review.
+This companion accompanies *Solver-in-the-Loop: A Survey of Symbolic Solver Integration in Large Language Model Reasoning*. It provides the literature catalogue, taxonomy, cited bibliography, illustrations, and descriptive analyses supporting the review.
 
 ## Review scope
 
@@ -12,7 +12,7 @@ The catalogue contains **1,459 studies / 1,745 reports**: **1,254 core-method st
 | --- | --- |
 | 1 January 2020–31 October 2026 | Eligibility window for the earliest assessable public report |
 | 4 November 2026 | Latest author-confirmed corpus integration |
-| 5 November 2026 | Current manuscript and companion refresh |
+| 21 November 2026 | Manuscript snapshot used for the companion figures, references and evaluation guide |
 
 Source coverage varies by platform; the review window does not imply identical execution dates or a complete five-source rerun in every month. The catalogue preserves all previously released study identities and adds only author-confirmed inclusions. A selected citation report can postdate the eligibility window. Catalogue metadata follows the author-confirmed selected-report register; the bibliography follows the editions cited in the manuscript, which can differ in year or venue.
 
@@ -22,7 +22,7 @@ The [search and selection figure](review-flow.md) reports the completed selectio
 
 ## Classification and analysis
 
-The five solver roles describe how a returned signal is consumed. Roles overlap and differ from solver families and task categories. Author-confirmed inclusion is separate from AI-assisted role annotations and analytical groupings; it does not imply independent human verification of every exported field.
+The five solver roles describe how the system uses solver outputs. The interaction mechanisms describe the topology, invocation control, intervention granularity, information exchange, orchestration, and placement that realize those roles. Roles overlap and differ from solver families and task categories. Author-confirmed inclusion is separate from AI-assisted role annotations and analytical groupings; it does not imply independent human verification of every exported field.
 
 Corpus and extension distributions cover the current catalogue. The two detailed task/metric tables retain their **1,301-study baseline**; the 158 subsequent additions are not included in those aggregates. Their relevance annotations remain AI recommendations. See [analysis coverage](../analysis/README.md) for units and interpretation.
 
@@ -32,4 +32,4 @@ A successful formal check concerns the encoded obligation and stated assumptions
 
 Study identities are retained across releases. Missing values remain explicit. Public source links and bibliographic metadata identify the recorded report versions; their continued online availability is not guaranteed by offline validation. Source fingerprints and release dates are in [snapshot metadata](../data/snapshot.json).
 
-The released JSON reproduces the CSV and readable catalogues with the included renderer. Full texts, internal adjudication records, writing notes, and the draft manuscript are not part of this companion. Corrections and new-paper suggestions can be submitted through [Issues](https://github.com/YishuaiGeng/Solvers-in-the-loop-Survey/issues/new/choose).
+The released JSON reproduces the CSV and readable catalogues with the included renderer. Full texts, internal adjudication records, writing notes, and the draft manuscript are not part of this companion. Corrections and new-paper suggestions can be submitted through [Issues](https://github.com/YishuaiGeng/Solver-in-the-Loop-Survey/issues/new/choose).

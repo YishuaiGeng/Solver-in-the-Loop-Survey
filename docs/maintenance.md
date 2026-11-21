@@ -4,14 +4,14 @@ Routine updates are reviewed and committed to `main`. Git history records each c
 
 ## Papers and corrections
 
-Suggestions arrive through [Issues](https://github.com/YishuaiGeng/Solvers-in-the-loop-Survey/issues/new/choose). Include a public source, the relevant study ID when known, and a page or section supporting a classification correction. A suggestion remains a candidate until reviewed.
+Suggestions arrive through [Issues](https://github.com/YishuaiGeng/Solver-in-the-Loop-Survey/issues/new/choose). Include a public source, the relevant study ID when known, and a page or section supporting a classification correction. A suggestion remains a candidate until reviewed.
 
 Preserve stable study/report identities and missing-value statuses. Inclusion, identity merges and substantive reclassification require maintainer review against the underlying evidence. Metadata corrections do not automatically extend the eligibility window. Keep original evidence and review events in the research records; publish approved metadata and summaries here.
 
 ## Updating the repository
 
 1. Edit the relevant JSON or documentation. The homepage template is `scripts/README.template`; full lists are generated from `data/papers.json`.
-2. Keep the repository homepage concise and link to `papers/`. Its directory README contains the classified paper list, generated from all current taxonomy placements and the cited reference metadata. `papers/catalogue.md` leads to all included studies. Do not add selected paper lists to the root README. The method index preserves the same placements and links them to the cited paper records.
+2. The classified paper list and method index follow the taxonomy placements and cited references. The full catalogue covers all included studies. Update the manuscript reading guide when section numbering changes. [Renderer](../scripts/render.py)
 3. For a changed study record, increment `record_version` and append its before/after values to `data/changes.csv`. Presentation-only changes leave those records unchanged.
 4. Run the renderer, validation, and tests, inspect the diff, then commit the reviewed update.
 

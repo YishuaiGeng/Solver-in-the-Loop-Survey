@@ -7,6 +7,7 @@ import re
 from collections import Counter
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+from xml.etree import ElementTree
 
 from render import FIELDS, ROLES, ROOT, load, manifest, render
 
@@ -94,7 +95,8 @@ def validate_files():
     allowed_root = {'README.md','LICENSE','CITATION.cff','CONTRIBUTING.md','AGENTS.md','CHANGELOG.md','.gitignore','release-manifest.json'}
     allowed_ext = {'.md','.csv','.json','.bib','.png','.py','.yml','.yaml','.cff','.template'}
     # Split literals so the validator does not mistake its own patterns for leaks.
-    forbidden = ['/'+'Users/', '/'+'home/', 'file'+ '://', 'Solvers-in-the-loop-Survey'+'-Workspace',
+    forbidden = ['/'+'Users/', '/'+'home/', 'file'+ '://', 'Solver'+'-in-the-Loop-Survey-Workspace',
+                 'Solvers'+'-in-the-loop-Survey-Workspace',
                  'canonical_'+'pdf_path', 'name_evidence_'+'excerpt', 'BEGIN '+'PRIVATE KEY']
     paths = []
     for p in ROOT.rglob('*'):
@@ -104,7 +106,7 @@ def validate_files():
         require(not p.is_symlink(), f'Symlink is outside release policy: {rel}')
         if not p.is_file():
             continue
-        require((len(rel.parts)==1 and p.name in allowed_root) or (len(rel.parts)>1 and rel.parts[0] in allowed_dirs and p.suffix in allowed_ext), f'Unapproved file: {rel}')
+        require((len(rel.parts)==1 and p.name in allowed_root) or (len(rel.parts)>1 and rel.parts[0] in allowed_dirs and (p.suffix in allowed_ext or rel.as_posix() == 'assets/branding/solver-in-the-loop.svg')), f'Unapproved file: {rel}')
         require(p.stat().st_size < 5_000_000, f'Unexpected large file: {rel}')
         paths.append(p)
         if p.suffix == '.png':
@@ -113,6 +115,18 @@ def validate_files():
         text = p.read_text(encoding='utf-8')
         require(not any(s in text for s in forbidden), f'Private content marker: {rel}')
         require(not re.search(r'gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|sk-[A-Za-z0-9]{30,}',text), f'Credential-like content: {rel}')
+        if p.suffix == '.svg':
+            logo = ElementTree.fromstring(text)
+            namespace = '{http://www.w3.org/2000/svg}'
+            require(logo.tag == namespace + 'svg', 'Invalid SVG logo')
+            allowed_tags = {'svg', 'defs', 'title', 'desc', 'g', 'path', 'ellipse', 'linearGradient', 'stop'}
+            for element in logo.iter():
+                require(element.tag in {namespace + tag for tag in allowed_tags}, 'Unexpected SVG logo element')
+                for name, value in element.attrib.items():
+                    require(not name.lower().startswith('on') and name not in {'style', 'href'}
+                            and not name.startswith('{'), 'Unexpected SVG logo attribute')
+                    require('url(' not in value.lower() or re.fullmatch(r'url\(#[\w.-]+\)', value),
+                            'External SVG logo resource')
         if p.suffix != '.md':
             continue
         for dest in re.findall(r'\]\(<?([^\s)>]+)>?\)',text) + re.findall(r'src="([^"]+)"',text):
@@ -157,11 +171,29 @@ def main():
         require(set(m)=={'role','grouping_axis','direction','method','bibtex_key','study_id','report_id','label_type'}, 'Unknown taxonomy fields')
         require(m['study_id'] in ids, 'Taxonomy references absent study')
         require(m['bibtex_key'] in {r['key'] for r in refs}, 'Taxonomy references absent manuscript citation')
-    for b in load('analysis/benchmarks.json'):
-        require(set(b)=={'part','name','category','source','modality','citations','protocols'}, 'Unknown benchmark fields')
-        require(set(b['citations']) <= {r['key'] for r in refs}, 'Absent resource citation')
-        for p in b['protocols']:
-            require(set(p)=={'text','citations'} and set(p['citations'])<={r['key'] for r in refs}, 'Absent solver-use citation')
+    if 'benchmark_resources' in snap:
+        groups = load('analysis/benchmarks.json')
+        reference_keys = {ref['key'] for ref in refs}
+        require(len({group['task'] for group in groups}) == len(groups), 'Duplicate primary task')
+        for group in groups:
+            require(set(group) == {'task', 'resource_count', 'examples'}, 'Unknown task benchmark fields')
+            require(isinstance(group['resource_count'], int) and group['resource_count'] > 0,
+                    'Invalid task resource count')
+            require(group['examples'], 'Task benchmark examples are missing')
+            for example in group['examples']:
+                require(set(example) == {'name', 'citations'} and example['name'] and example['citations'],
+                        'Invalid benchmark example')
+                require(set(example['citations']) <= reference_keys, 'Absent resource citation')
+        require(sum(group['resource_count'] for group in groups) == snap['benchmark_resources'],
+                'Benchmark resource count differs from snapshot')
+        require(sum(len(group['examples']) for group in groups) == snap['benchmark_examples'],
+                'Benchmark example count differs from snapshot')
+    else:
+        for b in load('analysis/benchmarks.json'):
+            require(set(b)=={'part','name','category','source','modality','citations','protocols'}, 'Unknown benchmark fields')
+            require(set(b['citations']) <= {r['key'] for r in refs}, 'Absent resource citation')
+            for p in b['protocols']:
+                require(set(p)=={'text','citations'} and set(p['citations'])<={r['key'] for r in refs}, 'Absent solver-use citation')
     for name in ('task-relevance-counts.csv','task-by-scoped-metric.csv'):
         with (ROOT/'analysis'/name).open(encoding='utf-8',newline='') as f:
             rows = list(csv.DictReader(f))
@@ -173,7 +205,7 @@ def main():
     require(load('release-manifest.json')==manifest(), 'Release file manifest differs; regenerate after reviewed edits')
     cff=(ROOT/'CITATION.cff').read_text()
     require('version: '+snap['version'] in cff and 'date-released: '+snap['release_date'] in cff, 'Citation version/date differs')
-    require('https://github.com/YishuaiGeng/Solvers-in-the-loop-Survey' in cff,'Citation repository missing')
+    require('https://github.com/YishuaiGeng/Solver-in-the-Loop-Survey' in cff,'Citation repository missing')
     print(f"Validated {len(papers):,} studies, {len(refs)} references, {len(files)} public files; generated views and fingerprints agree.")
 
 

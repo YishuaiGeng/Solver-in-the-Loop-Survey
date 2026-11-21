@@ -1,49 +1,41 @@
+<p align="center">
+  <img src="assets/branding/solver-in-the-loop.svg" alt="Solver-in-the-Loop logo" width="112">
+</p>
+
+<h1 align="center">Solver-in-the-Loop: A Survey of Symbolic Solver Integration in Large Language Model Reasoning</h1>
+
+<p align="center">
+  Yishuai Geng · Guohui Xiao · Guilin Qi · Tianxing Wu · Peifeng Zhang
+</p>
+
 <div align="center">
 
-<h1>Symbolic Solvers for Verifiable Large Language Model Reasoning: A Survey</h1>
-
-Yishuai Geng · Guohui Xiao · Guilin Qi · Tianxing Wu · Huajun Chen · Haofen Wang
-
-@PAPER_LINKS@
-
-**[Paper list](papers/) · [Solver evolution](#solver-evolution) · [Benchmarks & analysis](analysis/README.md) · [Citation](#citation)**
+**@PAPER_LINKS@ · [Study catalogue](papers/catalogue.md) · [Figures](assets/README.md) · [Citation](#citation)**
 
 </div>
 
-This repository accompanies *Symbolic Solvers for Verifiable Large Language Model Reasoning: A Survey*. We organize the literature around five uses of solver feedback: **symbolic solving, verification, diagnosis and repair, search control, and learning supervision**.
-
-The review covers **@STUDIES@ studies** from January 2020 through October 2026.
+This survey examines how large language models use symbolic solvers across **@STUDIES@ studies** and **@REPORTS@ reports**. Eligible studies were first reported between January 2020 and October 2026. The framework distinguishes symbolic solving, verification, diagnosis and repair, search control, and learning supervision as five overlapping roles for solver outputs. Within-study comparisons examine how outcomes vary with the task, model, and computational budget.
 
 <p align="center">
-  <img src="assets/figures/overview.png" alt="Overview of language models, symbolic solvers, and five uses of solver feedback." width="100%">
+  <a href="assets/figures/overview.png"><img src="assets/figures/overview.png" alt="Survey overview showing language models, symbolic solvers, and the five functional roles" width="860"></a>
 </p>
 
-## Solver evolution
+## Explore the survey
 
-Formal foundations, solver tools, and LLM–solver configurations across ten solver families.
-
-[![Solver development tree](assets/figures/solver-evolution.png)](assets/figures/solver-evolution.png)
-
-[Open at full resolution](assets/figures/solver-evolution.png) · [Role taxonomy](docs/taxonomy.md)
-
-## Find papers
-
-**[Open the classified paper list →](papers/)** — papers grouped by solver role and subcategory, with authors, source links and years.
-
-| Looking for | Open |
+| Topic | Materials |
 | --- | --- |
-| A method named in the survey | [Methods → papers](docs/method-index.md) — method names, categories, paper titles and source links |
-| A reference cited in the manuscript | [References](references/README.md) — @REFERENCES@ entries; [BibTeX](references/references.bib) |
-| Papers by role or year | [Full catalogue](papers/catalogue.md) — all @STUDIES@ studies |
-| Searchable metadata | [CSV](data/papers.csv) / [JSON](data/papers.json) — titles, authors, identifiers and classifications |
+| Study selection | [Eligibility and scope](docs/methodology.md) · [Search and selection counts](docs/review-flow.md) |
+| Solver roles and interaction mechanisms | [Survey framework](docs/taxonomy.md) · [Classified papers](papers/README.md) · [Method index](docs/method-index.md) |
+| Evaluation and reliability | [Evaluation guide](analysis/README.md) · [Tasks and benchmark resources](analysis/benchmarks.md) · [Reliability boundaries](docs/taxonomy.md#from-a-formal-check-to-a-claim-about-a-task) |
+| Figures | [Figure index in manuscript order](assets/README.md) |
 
-Use **Ctrl+F / ⌘F** on an index page to find a method, title or author. For the full catalogue, download the CSV and filter it in a spreadsheet.
+## Data and references
 
-[Benchmarks and analysis](analysis/README.md) · [Scope and interpretation](docs/methodology.md) · [Search and selection](docs/review-flow.md) · [Data field definitions](data/schema.md)
-
-## Contributing
-
-Suggestions and corrections are welcome through [Issues](https://github.com/YishuaiGeng/Solvers-in-the-loop-Survey/issues/new/choose). Include a paper link and explain the relevant solver interaction or correction. See the [contribution guide](CONTRIBUTING.md).
+| Resource | Formats |
+| --- | --- |
+| Included studies | [Browse by solver role or citation year](papers/catalogue.md) · [CSV](data/papers.csv) · [JSON](data/papers.json) |
+| Manuscript bibliography | [@REFERENCES@ references](references/README.md) · [BibTeX](references/references.bib) |
+| Data documentation | [Data guide](data/README.md) · [Schema](data/schema.md) · [Snapshot metadata](data/snapshot.json) |
 
 ## Citation
 
@@ -52,13 +44,17 @@ Suggestions and corrections are welcome through [Issues](https://github.com/Yish
 ```bibtex
 @misc{geng2026solvers_companion,
   author = {Yishuai Geng},
-  title = {Symbolic Solvers for Verifiable Large Language Model Reasoning: Survey Companion Repository},
+  title = {Solver-in-the-Loop: A Survey of Symbolic Solver Integration in Large Language Model Reasoning — Companion Repository},
   year = {2026},
   howpublished = {GitHub repository},
-  url = {https://github.com/YishuaiGeng/Solvers-in-the-loop-Survey}
+  url = {https://github.com/YishuaiGeng/Solver-in-the-Loop-Survey}
 }
 ```
 
-For a specific state of the catalogue, include an access date or commit in your citation. GitHub's **Cite this repository** button uses [CITATION.cff](CITATION.cff).
+For a specific catalogue snapshot, include its Git commit or access date. [Citation metadata](CITATION.cff)
 
-Copyright is retained; see [LICENSE](LICENSE) and [figure credits](assets/README.md).
+## Contributing
+
+For paper suggestions or corrections, include the public source and a page or section supporting the proposed change. [Issue forms](https://github.com/YishuaiGeng/Solver-in-the-Loop-Survey/issues/new/choose) · [Contribution guide](CONTRIBUTING.md)
+
+Copyright and artwork credits are recorded in the repository. [License](LICENSE) · [Figure credits](assets/README.md)

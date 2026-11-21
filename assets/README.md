@@ -1,9 +1,25 @@
-# Visual assets
+# Survey figures
 
-The mascot logo was supplied by the survey author for repository branding. The [original PNG](branding/solvers-in-the-loop-logo-original.png) is preserved at 1,916 × 821 pixels. The homepage uses the [cropped logo](branding/solvers-in-the-loop-logo.png), at 1,879 × 461 pixels, with the surrounding transparent margins trimmed and 24 pixels of padding around the visible artwork. The crop rectangle is `(31, 152, 1910, 613)` in original-image coordinates, with the right and bottom edges exclusive. Transparency and pixels inside the crop are preserved.
+Display copies of the current manuscript artwork, ordered by figure number.
 
-The eleven PNG illustrations present the survey overview, solver development, role taxonomy, five solver mechanisms, verification boundaries, and the two search/selection panels. They are display derivatives of the current manuscript artwork; labels and mechanisms are not redrawn for this repository.
+| Figure | Artwork |
+| --- | --- |
+| 1 | [Survey overview](figures/overview.png) |
+| 2(a) | [Search concepts and sources](figures/search-provenance.png) |
+| 2(b) | [PRISMA study selection](figures/study-selection.png) |
+| 3 | [Solver evolution](figures/solver-evolution.png) |
+| 4 | [Functional role taxonomy](figures/taxonomy.png) |
+| 5 | [Symbolic solving](figures/symbolic-solving.png) |
+| 6 | [Verification](figures/verification.png) |
+| 7 | [Diagnosis and repair](figures/diagnosis-repair.png) |
+| 8 | [Search control](figures/search-control.png) |
+| 9 | [Learning supervision](figures/learning-supervision.png) |
+| 10 | [Relations between solver roles](figures/role-integration.png) |
+| 11 | [Model–solver interaction mechanisms](figures/interaction-overview.png) |
+| 12 | [Reliability boundaries](figures/assurance-scope.png) |
 
-The development tree and taxonomy are available at high resolution for reading their labels. The remaining illustrations are proportionally resized to a maximum dimension of 2,000 pixels. Source fingerprints and rendering operations are recorded in [snapshot.json](../data/snapshot.json).
+The snapshot metadata records the source fingerprints and rendering operations. [Snapshot metadata](../data/snapshot.json)
 
-Embedded institutional or product marks identify their respective organizations or tools; they do not imply endorsement. Rights remain with the respective holders. No open-content license is granted; see [LICENSE](../LICENSE).
+The homepage uses the author-supplied SVG. Earlier logo artwork remains available in the repository history. [Homepage logo](branding/solver-in-the-loop.svg)
+
+Institutional and product marks identify their respective organizations or tools. Rights remain with their holders. [License](../LICENSE)

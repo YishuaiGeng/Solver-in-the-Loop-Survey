@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping maintain this survey companion. Use an [issue form](https://github.com/YishuaiGeng/Solvers-in-the-loop-Survey/issues/new/choose) to suggest a paper, report a new version, correct metadata, or discuss a classification.
+Thank you for helping maintain this survey companion. Use an [issue form](https://github.com/YishuaiGeng/Solver-in-the-Loop-Survey/issues/new/choose) to suggest a paper, report a new version, correct metadata, or discuss a classification.
 
 Include a public paper URL/DOI/arXiv identifier, the relevant stable study ID if known, and a short explanation with a section or page locator. For classification suggestions, identify the formal object, the solver query or check, and how the returned signal is consumed. Distinguish what the paper claims from what its evidence establishes. Please link to lawfully accessible material rather than attaching copyrighted full texts.
 
