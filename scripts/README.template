@@ -10,32 +10,33 @@
 
 <div align="center">
 
-**@PAPER_LINKS@ · [Study catalogue](papers/catalogue.md) · [Figures](assets/README.md) · [Citation](#citation)**
+**@STUDIES@ studies · @REPORTS@ reports · January 2020–October 2026**
+
+@PAPER_LINKS@ · [Classified papers](papers/README.md) · [Full catalogue](papers/catalogue.md) · [Citation](#citation)
 
 </div>
 
-This survey examines how large language models use symbolic solvers across **@STUDIES@ studies** and **@REPORTS@ reports**. Eligible studies were first reported between January 2020 and October 2026. The framework distinguishes symbolic solving, verification, diagnosis and repair, search control, and learning supervision as five overlapping roles for solver outputs. Within-study comparisons examine how outcomes vary with the task, model, and computational budget.
+## Survey overview
+
+How do large language models use symbolic solvers, and what can a solver result establish? The survey organizes the literature around five overlapping roles and compares reported outcomes across tasks, models, and computational budgets. It examines when a successful formal check supports a claim about the original task. [Survey framework](docs/taxonomy.md) · [Evaluation and reliability](analysis/README.md)
 
 <p align="center">
-  <a href="assets/figures/overview.png"><img src="assets/figures/overview.png" alt="Survey overview showing language models, symbolic solvers, and the five functional roles" width="860"></a>
+  <a href="assets/figures/overview.png"><img src="assets/figures/overview.png" alt="Overview of the five roles that symbolic solvers play in language-model reasoning" width="860"></a>
 </p>
 
-## Explore the survey
+**Browse by solver role**
 
-| Topic | Materials |
+[Symbolic solving](papers/roles/symbolic-solving.md) · [Verification](papers/roles/verification.md) · [Diagnosis and repair](papers/roles/diagnosis-repair.md) · [Search control](papers/roles/search-control.md) · [Learning supervision](papers/roles/learning-supervision.md)
+
+## Research materials
+
+| Looking for | Open |
 | --- | --- |
-| Study selection | [Eligibility and scope](docs/methodology.md) · [Search and selection counts](docs/review-flow.md) |
-| Solver roles and interaction mechanisms | [Survey framework](docs/taxonomy.md) · [Classified papers](papers/README.md) · [Method index](docs/method-index.md) |
-| Evaluation and reliability | [Evaluation guide](analysis/README.md) · [Tasks and benchmark resources](analysis/benchmarks.md) · [Reliability boundaries](docs/taxonomy.md#from-a-formal-check-to-a-claim-about-a-task) |
-| Figures | [Figure index in manuscript order](assets/README.md) |
-
-## Data and references
-
-| Resource | Formats |
-| --- | --- |
-| Included studies | [Browse by solver role or citation year](papers/catalogue.md) · [CSV](data/papers.csv) · [JSON](data/papers.json) |
-| Manuscript bibliography | [@REFERENCES@ references](references/README.md) · [BibTeX](references/references.bib) |
-| Data documentation | [Data guide](data/README.md) · [Schema](data/schema.md) · [Snapshot metadata](data/snapshot.json) |
+| Included studies and metadata | [Study catalogue](papers/catalogue.md) · [CSV](data/papers.csv) · [JSON](data/papers.json) · [Data dictionary](data/schema.md) |
+| A named method or cited paper | [Method index](docs/method-index.md) · [@REFERENCES@ manuscript references](references/README.md) · [BibTeX](references/references.bib) |
+| Evaluation tasks and benchmark resources | [Benchmark guide](analysis/benchmarks.md) · [Analysis downloads](analysis/README.md#downloads-and-coverage) |
+| Search scope and study selection | [Review methodology](docs/methodology.md) · [Screening and selection counts](docs/review-flow.md) · [Snapshot metadata](data/snapshot.json) |
+| Artwork from the manuscript | [All figures in manuscript order](assets/README.md) |
 
 ## Citation
 
@@ -57,4 +58,4 @@ For a specific catalogue snapshot, include its Git commit or access date. [Citat
 
 For paper suggestions or corrections, include the public source and a page or section supporting the proposed change. [Issue forms](https://github.com/YishuaiGeng/Solver-in-the-Loop-Survey/issues/new/choose) · [Contribution guide](CONTRIBUTING.md)
 
-Copyright and artwork credits are recorded in the repository. [License](LICENSE) · [Figure credits](assets/README.md)
+[License](LICENSE) · [Figure credits](assets/README.md)
