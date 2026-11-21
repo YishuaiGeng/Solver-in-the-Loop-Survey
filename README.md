@@ -24,10 +24,10 @@ How do large language models use symbolic solvers, and what can a solver result 
   <a href="assets/figures/overview.png"><img src="assets/figures/overview.png" alt="Overview of the five roles that symbolic solvers play in language-model reasoning" width="860"></a>
 </p>
 
-## Functional role taxonomy
+## Solver evolution
 
 <p align="center">
-  <a href="assets/figures/taxonomy.png"><img src="assets/figures/taxonomy.png" alt="Functional role taxonomy of symbolic solvers, with representative methods grouped under five roles" width="860"></a>
+  <a href="assets/figures/solver-evolution.png"><img src="assets/figures/solver-evolution.png" alt="Timeline of symbolic solvers and their integration into language-model systems" width="860"></a>
 </p>
 
 **Browse by solver role**
