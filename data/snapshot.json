@@ -190,17 +190,17 @@
     },
     {
       "asset": "assets/figures/interaction-overview.png",
-      "source_sha256": "77a69c451318ba26de992790b6dfd92c66437cea98934c7dcf47a3ea198e16a8",
+      "source_sha256": "c3bcf6b117029b23164810b66d36023308c90ae369acf14a35438a6bf297da19",
       "operation": "Existing standalone PDF rendered to RGB PNG; aspect ratio preserved; maximum dimension 2000 px"
     },
     {
       "asset": "assets/figures/solver-evolution.png",
-      "source_sha256": "4b2defb2e3222def68c02716e071da5915bc02bb29f75fd5a5f17c1c542bce10",
+      "source_sha256": "e6591ff3e2136820f2d809f0b9f44aebf7ff6f2ec44e382756c5163e0f4db98b",
       "operation": "Artwork of compiled Figure 3, cropped above the caption and rendered to RGB PNG"
     },
     {
       "asset": "assets/figures/taxonomy.png",
-      "source_sha256": "4b2defb2e3222def68c02716e071da5915bc02bb29f75fd5a5f17c1c542bce10",
+      "source_sha256": "e6591ff3e2136820f2d809f0b9f44aebf7ff6f2ec44e382756c5163e0f4db98b",
       "operation": "Artwork of compiled Figure 4, cropped above the caption and rendered to RGB PNG"
     },
     {
