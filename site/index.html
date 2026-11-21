@@ -8,7 +8,6 @@
   <link rel="icon" type="image/svg+xml" href="assets/branding/solver-in-the-loop-mascot.svg">
   <link rel="stylesheet" href="style.css">
   <script src="catalogue.js" defer></script>
-  <script src="figures.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -17,7 +16,7 @@
       <a class="wordmark" href="./">Solver-in-the-Loop</a>
       <div class="nav-links">
         <a href="#abstract">Abstract</a>
-        <a href="#figures">Figures</a>
+        <a href="#figures">Overview</a>
         <a href="#catalogue">Catalogue</a>
         <a href="#citation">Citation</a>
       </div>
@@ -50,15 +49,11 @@
     </section>
 
     <section id="figures" class="section container" aria-labelledby="figures-title">
-      <h2 id="figures-title">Figures</h2>
-      <div class="carousel" aria-roledescription="carousel" aria-label="Manuscript figures">
-        <button type="button" class="carousel-arrow" id="figure-previous" aria-label="Previous figure">&#8249;</button>
-        <div class="carousel-track" id="figure-track" tabindex="0">
-          $figure_slides
-        </div>
-        <button type="button" class="carousel-arrow" id="figure-next" aria-label="Next figure">&#8250;</button>
-      </div>
-      <p class="carousel-counter" id="figure-counter" aria-live="polite"></p>
+      <h2 id="figures-title">Overview</h2>
+      <figure class="overview">
+        <a href="assets/figures/overview.png"><img src="assets/figures/overview.png" width="2000" height="673" alt="Figure 1: Overview of solver-in-the-loop reasoning with large language models"></a>
+        <figcaption><strong>Figure 1.</strong> Overview of solver-in-the-loop reasoning with large language models. The dashed line marks the interface between LLM-based modeling and formal reasoning over the resulting representation. Formal checks apply to that representation under specified semantics and assumptions; passing them does not by itself establish correspondence to the original task. The framework illustrates five non-exclusive functional roles of symbolic solvers in LLM-based reasoning: symbolic solving, verification, diagnosis and repair, search control, and learning supervision; these roles are distinguished by how solver outputs are used within the reasoning process.</figcaption>
+      </figure>
       <p class="resource-links"><a href="$repository/blob/main/assets/README.md">All manuscript figures on GitHub</a><a href="$repository/blob/main/docs/taxonomy.md">Taxonomy and reliability boundaries</a></p>
 
       <h3 class="roles-title">Five solver roles</h3>

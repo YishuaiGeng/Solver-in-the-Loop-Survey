@@ -74,14 +74,12 @@
     "references/references.bib": "3e96aa72855c5504388cb34fa0b6510c1146f8ce12cd357acf12827aa2698009",
     "references/references.json": "932e03051428d2979d117152ba948aff5ca25356311e11522077d30f4b1bb550",
     "scripts/README.template": "938df381e575388d71802530a304d8dae68da807285edd3f0574d3d9fb315657",
-    "scripts/build_site.py": "780dde0a539d7c0d061f54f3353e9ff1d53a534e8e2fedbe7ac9e950a30a51a1",
+    "scripts/build_site.py": "0034883a23a7f56b45b8ea348cc572911b29a8748d087d4aaf22dcfe84a019a9",
     "scripts/render.py": "c6e89944a3810fee2d5ffe90a7889256aaa64373b48da3d1fb650edf1cc12418",
-    "scripts/validate.py": "ed2e24b40ef88e4674e9d29336324e1f7ed434d80552b174e2e2241431583e81",
-    "site/captions.json": "fcc49b35212b38e3e620e1ae75225f28f78010225a1490c8ecf37531dc435bbb",
+    "scripts/validate.py": "e384864edb7f85ecee419716b92c5dc14d8b98fec70d1e0137a63c8d1df52f15",
     "site/catalogue.js": "81c435fd017dea1847058e76019e3aa1deab270f8bed9a4c69b6e4d2bcde3c19",
-    "site/figures.js": "a70c5c78b13c89cff087c3f8e443d7fcb330eeb0688b1c43941d3b681fd8f5bf",
-    "site/index.html": "477cffab72e82523cf01e3b83250f8c169d82a40b994d163d35b27e878c3d853",
-    "site/style.css": "53ffa08f58ac56067ebddbaf58a5acc9b1664e0e7c7a46248c30bafb0e9f804b",
+    "site/index.html": "7241ed7bd35bd9b71a60ff3e485c365a2effa8e8a23e0125120600376d982a17",
+    "site/style.css": "c7232f696a33640f20dc96ea4b0daa5e6ad6126985e0a9ddc8e442bca8e89352",
     "tests/test_validation.py": "e526aa73658e9ed5b9bb842886cec11b78e69393a870b13f79fada7ac9df6eaf"
   }
 }

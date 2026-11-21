@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Build the static project site from the public companion repository."""
 import argparse
-import re
 from datetime import date
 from html import escape
 from pathlib import Path
@@ -15,18 +14,10 @@ PUBLIC_DOWNLOADS = (
     "assets/branding/solver-in-the-loop.svg",
     "assets/branding/solver-in-the-loop-mascot.svg",
     "assets/figures/overview.png",
-    "assets/figures/solver-evolution.png",
     "data/papers.csv",
     "data/papers.json",
     "references/references.bib",
 )
-
-
-def figures():
-    """Manuscript figures in order, as listed in assets/README.md."""
-    rows = re.findall(r"^\| (\d+(?:\([a-z]\))?) \| \[([^\]]+)\]\((figures/[^)]+\.png)\) \|$",
-                      (ROOT / "assets/README.md").read_text(encoding="utf-8"), re.M)
-    return [(number, name, f"assets/{path}") for number, name, path in rows]
 
 
 def make_index():
@@ -48,14 +39,6 @@ def make_index():
 
     citation = (ROOT / "README.md").read_text(encoding="utf-8").split("```bibtex\n", 1)[1]
     bibtex = citation.split("\n```", 1)[0]
-    captions = load("site/captions.json")
-    slides = "\n          ".join(
-        f'<figure class="slide" aria-roledescription="slide" aria-label="Figure {number}">'
-        f'<a href="{path}"><img src="{path}" alt="Figure {number}: {escape(name)}" '
-        f'loading="{"eager" if index == 0 else "lazy"}"></a>'
-        f'<figcaption><strong>Figure {number}.</strong> {escape(captions[number])}</figcaption></figure>'
-        for index, (number, name, path) in enumerate(figures())
-    )
     template = Template((ROOT / "site/index.html").read_text(encoding="utf-8"))
     return template.substitute(
         repository=REPOSITORY,
@@ -76,7 +59,6 @@ def make_index():
         resource_count=f'{snapshot["benchmark_resources"]:,}',
         reference_count=f'{snapshot["manuscript_references"]:,}',
         bibtex=escape(bibtex, quote=False),
-        figure_slides=slides,
     )
 
 
@@ -88,9 +70,9 @@ def main():
     if any(output.iterdir()):
         parser.error(f"Output directory must be empty: {output}")
     (output / "index.html").write_text(make_index(), encoding="utf-8")
-    for name in ("style.css", "catalogue.js", "figures.js"):
+    for name in ("style.css", "catalogue.js"):
         copyfile(ROOT / "site" / name, output / name)
-    for name in PUBLIC_DOWNLOADS + tuple(path for _, _, path in figures()):
+    for name in PUBLIC_DOWNLOADS:
         target = output / name
         target.parent.mkdir(parents=True, exist_ok=True)
         copyfile(ROOT / name, target)
