@@ -12,7 +12,7 @@
     "CITATION.cff": "4c415861a4bb2ab4e6b40cebcefff2319736d77a709cf0abddc211d3053d4141",
     "CONTRIBUTING.md": "2c6d1b8cdd1d227e9c5245b5b4b7c0ed61c8b3ff011756e1456a6bc7abac5bb0",
     "LICENSE": "8f1b1ffdefc3213b1471dbbf98da2b2e0b896646e1b40992852f055fa2450006",
-    "README.md": "6fa362f1059b2a2692f68c1b518590aa955107119ad6355ffa66792dcbfaa7df",
+    "README.md": "e2843a8922e53b0bb11762dddb069b071742b26949053ad626247a48968985c4",
     "analysis/README.md": "bdb80c38c50a4fb49706b81de90de6e8be5dec13ad745ef401d9245f6aead616",
     "analysis/benchmarks.json": "9c649117ecfdaf76d3d4a258da329737640049f45db60234459e3290d97df561",
     "analysis/benchmarks.md": "6f761574f495a2ab82c834f83aea4433824111620212ad89791e461d608d0566",
@@ -71,7 +71,7 @@
     "references/README.md": "f25724d047a9962a4bfe0c6151b88df6578fcf957293ef0f60839e4b3f13c391",
     "references/references.bib": "3e96aa72855c5504388cb34fa0b6510c1146f8ce12cd357acf12827aa2698009",
     "references/references.json": "932e03051428d2979d117152ba948aff5ca25356311e11522077d30f4b1bb550",
-    "scripts/README.template": "12984df99e7949cfc0c2a9a04f3ce6ae917830b1e4382f7913dc55e73e5f2c5d",
+    "scripts/README.template": "a8016e8ef8ba0008adb55f0a217095eba54bac92771b80fa21accf340a8c9abe",
     "scripts/render.py": "c6e89944a3810fee2d5ffe90a7889256aaa64373b48da3d1fb650edf1cc12418",
     "scripts/validate.py": "8c736d955d938d3f1679740e59a7f6d85bf9bbff5b86a3527658811e3f568017",
     "tests/test_validation.py": "e526aa73658e9ed5b9bb842886cec11b78e69393a870b13f79fada7ac9df6eaf"
