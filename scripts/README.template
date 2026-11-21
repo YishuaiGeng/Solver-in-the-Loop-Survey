@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/branding/solver-in-the-loop.svg" alt="Solver-in-the-Loop logo" width="112">
+  <img src="assets/branding/solver-in-the-loop.svg" alt="Solver-in-the-Loop logo" width="160">
 </p>
 
-<h1 align="center">Solver-in-the-Loop: A Survey of Symbolic Solver Integration in Large Language Model Reasoning</h1>
+<h1 align="center">A Survey of Symbolic Solver Integration in Large Language Model Reasoning</h1>
 
 <p align="center">
   Yishuai Geng · Guohui Xiao · Guilin Qi · Tianxing Wu · Peifeng Zhang
