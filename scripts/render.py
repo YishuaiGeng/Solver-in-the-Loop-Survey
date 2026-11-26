@@ -173,7 +173,7 @@ def render():
         citation_status = 'Cite the survey using its public paper record. ' + citation_status
     manuscript = [
         '# Solver-in-the-Loop: A Survey of Symbolic Solver Integration in Large Language Model Reasoning', '',
-        'Yishuai Geng, Guohui Xiao, Guilin Qi, Tianxing Wu, and Peifeng Zhang', '',
+        'Yishuai Geng, Guohui Xiao, Guilin Qi, Tianxing Wu, Peifeng Zhang, Xinshuo Ma, and Xujie Han', '',
         'School of Computer Science and Engineering, Southeast University, China', '',
         'Key Laboratory of New Generation Artificial Intelligence Technology and Its Interdisciplinary Applications, Ministry of Education, China', '',
         paper_status, '',

@@ -1,6 +1,6 @@
 # Solver-in-the-Loop: A Survey of Symbolic Solver Integration in Large Language Model Reasoning
 
-Yishuai Geng, Guohui Xiao, Guilin Qi, Tianxing Wu, and Peifeng Zhang
+Yishuai Geng, Guohui Xiao, Guilin Qi, Tianxing Wu, Peifeng Zhang, Xinshuo Ma, and Xujie Han
 
 School of Computer Science and Engineering, Southeast University, China
 

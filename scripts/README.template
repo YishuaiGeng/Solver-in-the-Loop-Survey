@@ -5,7 +5,7 @@
 <h1 align="center">A Survey of Symbolic Solver Integration in Large Language Model Reasoning</h1>
 
 <p align="center">
-  Yishuai Geng · Guohui Xiao · Guilin Qi · Tianxing Wu · Peifeng Zhang
+  Yishuai Geng · Guohui Xiao · Guilin Qi · Tianxing Wu · Peifeng Zhang · Xinshuo Ma · Xujie Han
 </p>
 
 <div align="center">
